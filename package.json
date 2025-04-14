@@ -1,0 +1,38 @@
+{
+  "name": "@solana/ms-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "format:fix": "turbo run format:fix",
+    "changeset": "changeset",
+    "clear": "turbo run clear && rimraf node_modules .turbo",
+    "manypkg": "manypkg check",
+    "manypkg:fix": "manypkg fix",
+    "build:ci": "turbo run build:ci",
+    "storybook": "turbo run storybook",
+    "test": "pnpm run manypkg && browserslist-lint && turbo run test"
+  },
+  "packageManager": "pnpm@10.8.0",
+  "engines": {
+    "node": "^20 || ^21"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.28.1",
+    "@manypkg/cli": "^0.21.4",
+    "@solana/ms-tools-config": "workspace:^",
+    "browserslist-lint": "^0.3.3",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.24.0",
+    "prettier": "^3.5.3",
+    "prettier-eslint": "^16.3.0",
+    "rimraf": "^6.0.1",
+    "sugarss": "^4.0.1",
+    "turbo": "^2.5.0",
+    "vitest": "^3.1.1"
+  }
+}

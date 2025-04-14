@@ -1,0 +1,12 @@
+{
+  "extends": "@solana/ms-tools-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*", "eslint.config.mjs", "prettier.config.js", "postcss.config.mjs"],
+  "exclude": ["node_modules", "dist"]
+}

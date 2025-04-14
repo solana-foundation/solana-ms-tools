@@ -1,0 +1,37 @@
+{
+  "name": "@solana/ms-tools-integrations",
+  "version": "0.1.0",
+  "description": "Handles integrations with third-party services like HubSpot, providing a centralized location for managing these connections",
+  "main": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "clean": "rm -rf dist",
+    "format": "prettier --check \"**/*.{js,mjs,cjs,ts,tsx}\" --config ./prettier.config.js",
+    "format:fix": "pnpm run format --write"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@solana/ms-tools-config": "workspace:^",
+    "@testing-library/dom": "^10.4.0",
+    "@types/node": "^22.14.0",
+    "prettier": "^3.5.3"
+  },
+  "devDependencies": {
+    "react": "^19.1.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.3",
+    "vitest": "^3.1.1"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

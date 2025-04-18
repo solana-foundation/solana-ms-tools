@@ -76,7 +76,6 @@ out
 .turbo
 
 # Compiled modules
-packages/**/lib
 packages/**/build
 packages/**/dist
 

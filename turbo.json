@@ -3,15 +3,13 @@
   "tasks": {
     "build": {
       "outputs": [
-        "dist/**",
-        "lib/**"
+        "dist/**"
       ],
       "dependsOn": ["^build"]
     },
     "build:ci": {
       "outputs": [
-        "dist/**",
-        "lib/**"
+        "dist/**"
       ],
       "dependsOn": ["^build:ci"]
     },

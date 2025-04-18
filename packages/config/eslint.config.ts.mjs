@@ -29,7 +29,6 @@ const config = {
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
   },
   include: ['src', '*.js', '*.ts', '*.jsx', '*.tsx', '*.mjs', '*.cjs', '*.json'],
-  exclude: ['node_modules', 'dist', 'build', 'out', 'coverage', 'lib'],
 }
 
 export default config

@@ -12,7 +12,7 @@
   ],
   "type": "commonjs",
   "exports": {
-    "./compatFlat.mjs": "./util.mjs",
+    "./eslint-util.mjs": "./eslint-util.mjs",
     "./prettier.config.js": "./prettier.config.js",
     "./eslint.config.react.mjs": "./eslint.config.react.mjs",
     "./eslint.config.base.js": "./eslint.config.base.js",
@@ -25,10 +25,6 @@
   },
   "main": ".",
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
-    "test": "vitest run",
-    "test:watch": "vitest",
     "lint": "eslint .",
     "clean": "rm -rf dist",
     "format": "prettier --check \"**/*.{js,mjs,cjs}\" --config ./prettier.config.js",
@@ -63,6 +59,7 @@
     "postcss-modules": "^6.0.0",
     "prettier": "^3.5.3",
     "prettier-eslint": "^16.3.0",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^14.0.0",
     "typescript": "^5.5.3",
@@ -73,6 +70,5 @@
   },
   "publishConfig": {
     "access": "restricted"
-  },
-  "dependencies": {}
+  }
 }

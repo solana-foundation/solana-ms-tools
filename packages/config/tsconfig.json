@@ -30,6 +30,5 @@
     "next-env.d.ts",
     "next.config.mjs",
     ".storybook/*.ts"
-  ],
-  "exclude": ["node_modules", "lib", "browser", "storybook-static/**"]
+  ]
 }

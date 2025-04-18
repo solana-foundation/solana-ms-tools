@@ -8,12 +8,9 @@ export default defineConfig((options) => ({
   tsconfig: './tsconfig.json',
   splitting: true,
   target: 'esnext',
-  outDir: './lib',
+  outDir: './dist',
   entry: {
     'index.esm': './src/index.ts',
-  },
-  loader: {
-    '.css': 'local-css',
   },
   esbuildOptions(opts) {
     opts.external = ['react']

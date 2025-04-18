@@ -5,11 +5,11 @@ import { FlatCompat } from '@eslint/eslintrc'
 /**
  * Factory for legacy ESLint configs
  */
-export function CompatFlat() {
+export function CompatFlat(
+  __filename = fileURLToPath(import.meta.url),
+  __dirname = path.dirname(__filename)
+) {
   // mimic CommonJS variables -- not needed if using CommonJS
-  const __filename = fileURLToPath(import.meta.url)
-  const __dirname = path.dirname(__filename)
-
   const compatFlat = new FlatCompat({
     baseDirectory: __dirname,
   })

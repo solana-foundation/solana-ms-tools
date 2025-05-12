@@ -29,14 +29,14 @@
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",
     "@solana/ms-tools-config": "workspace:^",
-    "@tailwindcss/postcss": "^4.1.4",
+    "@tailwindcss/postcss": "^4.1.5",
     "@testing-library/dom": "^10.4.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.501.0",
+    "lucide-react": "^0.503.0",
     "postcss": "^8.4.31",
     "tailwind-merge": "^3.2.0",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.5"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
@@ -51,7 +51,7 @@
     "@storybook/react": "^8.6.12",
     "@storybook/react-webpack5": "^8.6.12",
     "@storybook/test": "^8.6.12",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.3",
     "@types/react": "^19.1.2",
     "autoprefixer": "^10.4.17",
     "css-loader": "^7.1.2",
@@ -64,7 +64,7 @@
     "style-loader": "^4.0.0",
     "tsup": "^8.2.4",
     "typescript": "^5.5.3",
-    "vitest": "^3.1.1"
+    "vitest": "^3.1.2"
   },
   "publishConfig": {
     "access": "restricted"

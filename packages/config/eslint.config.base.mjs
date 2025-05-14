@@ -28,6 +28,8 @@ const config = {
     ...prettierConfig.rules,
     'new-cap': 'off',
     'no-undefined': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
     quotes: ['error', 'single'],
     semi: 'off',
     camelcase: 'off',

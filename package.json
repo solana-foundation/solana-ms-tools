@@ -17,7 +17,7 @@
     "storybook": "turbo run storybook",
     "test": "pnpm run manypkg && browserslist-lint && turbo run test"
   },
-  "packageManager": "pnpm@10.8.0",
+  "packageManager": "pnpm@10.11.0",
   "engines": {
     "node": "^20 || ^21"
   },

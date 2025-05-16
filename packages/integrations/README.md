@@ -18,20 +18,13 @@ pnpm add @solana/ms-tools-integrations
 
 ## Usage
 
-```typescript
-import { useHubSpot } from '@solana/ms-tools-integrations';
-
-// Initialize HubSpot integration
-useHubSpot({
-  portalId: 'your-portal-id'
-});
-```
-
 ## Requirements
 
 This package requires the following peer dependencies:
 
-- React ^18.0.0
+- react ^18.0.0
+- sanity ^3.88.3
+- next-sanity ^9.11.1
 
 ## Documentation
 
@@ -39,5 +32,4 @@ For detailed documentation and examples, please refer to the inline documentatio
 
 ## Supported Integrations
 
-- HubSpot
-- Additional integrations can be added based on specific microsite requirements
+- Sanity

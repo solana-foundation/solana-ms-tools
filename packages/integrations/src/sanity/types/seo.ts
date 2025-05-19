@@ -72,3 +72,14 @@ export type TSanityImageAsset = {
     }
   }
 }
+
+export interface IOpenGraph {
+  _type: 'openGraph'
+  description: string
+  siteName: string | undefined
+  url: string | undefined
+  title: string
+  images: {
+    url: any
+  }[]
+}

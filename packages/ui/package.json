@@ -7,6 +7,7 @@
   "type": "module",
   "exports": {
     ".": "./dist/index.js",
+    "./index.js": "./dist/index.js",
     "./styles.css": "./dist/index.css"
   },
   "scripts": {
@@ -43,7 +44,6 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",
-    "@storybook/addon-onboarding": "^8.6.12",
     "@storybook/addon-styling-webpack": "^1.0.1",
     "@storybook/addon-themes": "^8.6.12",
     "@storybook/addon-webpack5-compiler-swc": "^3.0.0",

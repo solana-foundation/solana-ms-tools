@@ -1,56 +1,42 @@
-import { resolve } from 'path'
-import type { StorybookConfig } from '@storybook/react-webpack5'
+import path from 'path'
+import { fileURLToPath } from 'url'
+import type { StorybookConfig } from '@storybook/react-vite'
+
+const dirname =
+  typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url))
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
-    '@storybook/addon-webpack5-compiler-swc',
     '@storybook/addon-essentials',
     '@storybook/addon-themes',
     '@storybook/experimental-addon-test',
-    {
-      name: '@storybook/addon-styling-webpack',
-      options: {
-        rules: [
-          {
-            test: /\.css$/,
-            sideEffects: true,
-            use: [
-              'style-loader',
-              {
-                loader: 'css-loader',
-                options: {
-                  importLoaders: 1,
-                  modules: false,
-                },
-              },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  implementation: require('postcss'),
-                },
-              },
-            ],
-          },
-        ],
-      },
-    },
   ],
   framework: {
-    name: '@storybook/react-webpack5',
+    name: '@storybook/react-vite',
     options: {},
   },
   docs: {
     autodocs: 'tag',
   },
-  webpackFinal: async (config) => {
-    if (config && config.resolve) {
-      config.resolve.symlinks = true // Enable symlink resolution
-      console.log('Resolved Paths:', JSON.stringify(config.resolve.modules, null, 2))
-      config.resolve.alias = {
-        ...config.resolve.alias,
-        '@': resolve(__dirname, '../src'),
-      }
+  viteFinal: async (config) => {
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        ...(config.resolve?.alias || {}),
+        '@': path.resolve(dirname, '../src'),
+      },
+    }
+
+    // Excluding these two packages from the Vite build process to avoid issues with Storybook
+    config.optimizeDeps = {
+      ...(config.optimizeDeps || {}),
+      exclude: ['sb-original/image-context', 'sb-original/default-loader'],
+    }
+
+    config.ssr = {
+      ...(config.ssr || {}),
+      external: ['sb-original/image-context', 'sb-original/default-loader'],
     }
 
     return config

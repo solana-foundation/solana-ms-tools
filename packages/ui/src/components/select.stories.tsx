@@ -88,9 +88,6 @@ export const WithIcon: Story = {
     <Select {...args}>
       <SelectTrigger>
         <SelectValue placeholder="Select an option" />
-        <span className="absolute right-2 flex size-3.5 items-center justify-center">
-          <span className="text-muted-foreground">Icon</span>
-        </span>
       </SelectTrigger>
       <SelectContent>
         <SelectItem value="1">

@@ -16,7 +16,7 @@ const preview: Preview = {
     },
   },
 
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
+  // Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
 
   decorators: [
@@ -26,7 +26,7 @@ const preview: Preview = {
         light: 'light',
         dark: 'dark',
       },
-      defaultTheme: 'dark',
+      defaultTheme: 'light',
     }),
   ],
 }

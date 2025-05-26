@@ -49,8 +49,8 @@ This document outlines the step-by-step process for releasing new versions of th
   ❗️ Before making a release, make sure the root `package.json` file has the matching version.
    - Create a new tag:
    ```bash
-   git tag v[version]
-   git push origin v[version]
+   git tag v<version>
+   git push origin v<version>
    ```
 
 ## Package-specific Considerations

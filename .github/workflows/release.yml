@@ -40,10 +40,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PACKAGE_SCOPE: ${{ env.PACKAGE_SCOPE }}
 
-      # Version all packages that have changesets
-      - name: Version packages (if any)
-        run: pnpm changeset version
-
       - name: Prepare for publishing
         run: |
           pnpm prepublish

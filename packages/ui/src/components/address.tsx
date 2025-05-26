@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
-import { Copyable, LABELS } from '@/shared/copyable'
+import { Copyable, LABELS } from './copyable'
 
 const lgVariants = cva('hidden lg:flex', {
   variants: {

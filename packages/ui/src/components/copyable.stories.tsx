@@ -4,7 +4,7 @@ import { Copyable } from './copyable'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Shared/Copyable',
+  title: 'Copyable',
   component: Copyable,
   parameters: {
     layout: 'left',

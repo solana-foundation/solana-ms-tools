@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from 'react'
+import { ComponentProps, ReactNode, useState } from 'react'
 import { cva } from 'class-variance-authority'
 import { CheckCircle, Copy, XCircle } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -48,7 +48,7 @@ export function Copyable({
   timeout = 1_000,
   className,
   labels = LABELS,
-}: React.ComponentProps<'span'> & Props) {
+}: ComponentProps<'span'> & Props) {
   const [state, setState] = useState<CopyState>(_initialState)
 
   const handleClick = async () => {
@@ -100,25 +100,34 @@ export function Copyable({
       >
         <span className="mr-2">
           <span className={copiedVariant({ status: state })}>
-            {message !== undefined && <span className="mr-2">{message}</span>}
             <CopyIcon />
           </span>
         </span>
-        {children}
+        <span>
+          {children}
+          <span
+            className={cn(copiedVariant({ status: 'copied' }), 'ml-2 hidden w-[40.2px]')}
+          ></span>
+        </span>
       </span>
     )
   }
 
   function ReplaceWithMessage() {
     return (
-      <span className="flex-column flex flex-nowrap">
-        <span className="text-xs">
+      <span className="flex-column relative flex flex-nowrap">
+        <span className="absolute text-xs">
           <span className={copiedVariant({ status: state })}>
             <CopyIcon />
             <span className="ml-2">{message}</span>
           </span>
         </span>
-        <span className="invisible">{children}</span>
+        <span className="invisible">
+          <span className="mr-2 inline-block w-[13px]">
+            {/* empty span to take same space as icon */}
+          </span>
+          {children}
+        </span>
       </span>
     )
   }

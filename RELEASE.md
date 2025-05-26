@@ -41,17 +41,9 @@ This document outlines the step-by-step process for releasing new versions of th
    - Update any version references in documentation
 
 4. **Merge your changes**
-  Create a pull request to the main branch and merge it.
+  Create a pull request to the main branch and merge it. 
+  This will trigger the release workflow.
 
-
-5. **Release**
-   - Checkout the main branch
-  ❗️ Before making a release, make sure the root `package.json` file has the matching version.
-   - Create a new tag:
-   ```bash
-   git tag v<version>
-   git push origin v<version>
-   ```
 
 ## Package-specific Considerations
 

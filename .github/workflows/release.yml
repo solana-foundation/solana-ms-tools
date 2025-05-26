@@ -2,8 +2,7 @@ name: Release Workflow
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches: [main]
 
 env:
   # TODO: replace organization or scope after the transfer

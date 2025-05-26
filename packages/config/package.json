@@ -1,5 +1,5 @@
 {
-  "name": "@solana/ms-tools-config",
+  "name": "@hoodieshq/ms-tools-config",
   "version": "0.1.0",
   "description": "Shared ESLint and Prettier configurations to ensure consistent code style and quality across all Solana microsite projects",
   "keywords": [
@@ -27,7 +27,6 @@
   "main": ".",
   "scripts": {
     "lint": "eslint .",
-    "clean": "rm -rf dist",
     "format": "prettier --check \"**/*.{js,mjs,cjs}\" --config ./prettier.config.js",
     "format:fix": "pnpm run format --write"
   },

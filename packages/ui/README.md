@@ -9,22 +9,26 @@ Reusable React components built with React, Tailwind CSS, and Shadcn, forming th
 - Pre-configured theming support
 - Core components including header and footer
 - Fully typed with TypeScript
+- Modern design system following Solana's brand guidelines
+- Responsive and accessible components
+- Dark mode support
 
 ## Installation
+
+First, configure your project to use the GitHub registry for the @solana scope:
+
+```bash
+# .npmrc
+@solana:registry=https://npm.pkg.github.com
+```
+
+Then install the package:
 
 ```bash
 pnpm add @solana/ms-tools-ui
 ```
 
-## Usage
-
-Components are documented using Storybook. Run the following command to view the documentation:
-
-```bash
-pnpm storybook
-```
-
-## Requirements
+## Setup
 
 This package requires the following peer dependencies:
 

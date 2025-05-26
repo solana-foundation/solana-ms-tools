@@ -1,5 +1,5 @@
 {
-  "name": "@solana/ms-tools-integrations",
+  "name": "@hoodieshq/ms-tools-integrations",
   "version": "0.1.0",
   "description": "Handles integrations with third-party services like HubSpot, providing a centralized location for managing these connections",
   "main": "dist/index.js",
@@ -16,7 +16,8 @@
     "lint": "eslint .",
     "clean": "rm -rf dist",
     "format": "prettier --check \"**/*.{js,mjs,cjs,ts,tsx}\" --config ./prettier.config.js",
-    "format:fix": "pnpm run format --write"
+    "format:fix": "pnpm run format --write",
+    "prepublish": "pnpm run build"
   },
   "peerDependencies": {
     "next-sanity": "^9.11.1",
@@ -24,8 +25,8 @@
     "sanity": "^3.88.3"
   },
   "dependencies": {
+    "@hoodieshq/ms-tools-config": "workspace:^",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
-    "@solana/ms-tools-config": "workspace:^",
     "@testing-library/dom": "^10.4.0",
     "@types/node": "^22.15.3",
     "prettier": "^3.5.3"

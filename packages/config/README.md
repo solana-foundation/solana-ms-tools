@@ -42,7 +42,7 @@ This package is part of the Solana Microsite Framework, serving as the central c
 - **PostCSS Configuration**
   - Modern CSS processing
   - Module support
-  - Integration with Tailwind CSS
+  - Integration with Tailwind CSS v4
 
 ## Installation
 
@@ -60,7 +60,7 @@ Create `eslint.config.js` in your project root:
 import baseConfig from '@solana/ms-tools-config/eslint.config.base.js'
 
 export default [
-  /prettier.config.cjsnjs",0],
+  ...baseConfig,
   {
     // Your project-specific overrides
   },
@@ -72,8 +72,10 @@ export default [
 Create `prettier.config.js`:
 
 ```javascript
-module.exports = {
-  ...require('@solana/ms-tools-config/prettier.config.cjs'),
+import baseConfig from '@solana/ms-tools-config/prettier.config.js'
+
+export default {
+  ...baseConfig,
   // Your project-specific overrides
 }
 ```
@@ -97,8 +99,10 @@ Extend the base configuration in your `tsconfig.json`:
 Create `stylelint.config.js`:
 
 ```javascript
-module.exports = {
-  extends: ['@solana/ms-tools-config/stylelint.config.js'],
+import baseConfig from '@solana/ms-tools-config/stylelint.config.js'
+
+export default {
+  extends: [baseConfig],
   // Your project-specific rules
 }
 ```
@@ -111,7 +115,7 @@ Create `vitest.config.ts`:
 import baseConfig from '@solana/ms-tools-config/vitest.config.js'
 
 export default {
-  /prettier.config.cjsnjs",0],
+  ...baseConfig,
   // Your project-specific test configuration
 }
 ```
@@ -121,8 +125,10 @@ export default {
 Create `postcss.config.js`:
 
 ```javascript
-module.exports = {
-  ...require('@solana/ms-tools-config/postcss.config.js'),
+import baseConfig from '@solana/ms-tools-config/postcss.config.js'
+
+export default {
+  ...baseConfig,
   // Your project-specific PostCSS configuration
 }
 ```
@@ -134,6 +140,41 @@ This package requires the following peer dependencies:
 - `eslint` ^9.0.0
 - `prettier` ^3.0.0
 - `typescript` ^5.0.0
+- `stylelint` ^16.0.0
+- `vitest` ^1.0.0
+- `postcss` ^8.0.0
+
+## Configuration Details
+
+### ESLint Rules
+
+Our ESLint configuration includes:
+
+- React Hooks rules for preventing common mistakes
+- Import sorting and organization
+- Accessibility (a11y) rules
+- TypeScript-specific rules
+- Testing best practices
+
+### Prettier Configuration
+
+Default settings include:
+
+- Single quotes
+- No semicolons
+- 2 space indentation
+- 80 character line width
+- Import sorting with specific group ordering
+
+### TypeScript Settings
+
+Key compiler options:
+
+- `strict: true`
+- `target: "ES2022"`
+- `module: "ESNext"`
+- Path aliases support
+- React JSX support
 
 ## Contributing
 
@@ -143,6 +184,22 @@ When making changes to configurations:
 2. Test changes across different types of microsites
 3. Document any breaking changes
 4. Update version numbers according to semver
+
+### Testing Your Changes
+
+```bash
+# Install dependencies
+pnpm install
+
+# Run tests
+pnpm test
+
+# Check formatting
+pnpm format
+
+# Lint
+pnpm lint
+```
 
 ## Documentation
 

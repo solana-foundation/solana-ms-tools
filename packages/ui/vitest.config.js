@@ -16,6 +16,9 @@ export default defineConfig({
       process: 'process/browser', // Optional full polyfill
     },
   },
+  optimizeDeps: {
+    include: ['sb-original/default-loader', 'sb-original/image-context', 'react/jsx-dev-runtime'],
+  },
   test: {
     globals: true,
     environment: 'jsdom',
@@ -23,9 +26,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       'sb-original/image-context': path.resolve(__dirname, './test/__mocks__/sb-original.ts'),
       'sb-original/default-loader': path.resolve(__dirname, './test/__mocks__/sb-original.ts'),
-    },
-    optimizeDeps: {
-      include: ['sb-original/default-loader', 'sb-original/image-context', 'react/jsx-dev-runtime'],
     },
     workspace: [
       {

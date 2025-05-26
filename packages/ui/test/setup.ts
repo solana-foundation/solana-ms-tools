@@ -1,1 +1,1 @@
-import '@solana/ms-tools-config/test/setup.ts'
+import '@hoodieshq/ms-tools-config/test/setup.ts'

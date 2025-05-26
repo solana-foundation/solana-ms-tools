@@ -1,0 +1,50 @@
+name: Release Workflow
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  # TODO: replace organization or scope after the transfer
+  PACKAGE_SCOPE: '@hoodieshq'
+  CARGO_TERM_COLOR: always
+  TURBO_TELEMETRY_DISABLED: 1
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Set up .npmrc for GitHub Packages
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
+          echo "${PACKAGE_SCOPE}:registry=https://npm.pkg.github.com" >> ~/.npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGE_SCOPE: ${{ env.PACKAGE_SCOPE }}
+
+      # Version all packages that have changesets
+      - name: Version packages (if any)
+        run: pnpm changeset version
+
+      - name: Prepare for publishing
+        run: |
+          pnpm prepublish
+
+      - name: Publish packages to GitHub Packages
+        run: pnpm changeset publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,4 +1,4 @@
-import { configs } from '@solana/ms-tools-config/eslint.config.react.mjs'
+import { configs } from '@hoodieshq/ms-tools-config/eslint.config.react.mjs'
 import { defineConfig } from 'eslint/config'
 
 export default defineConfig([

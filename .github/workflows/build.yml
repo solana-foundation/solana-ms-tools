@@ -1,0 +1,61 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_call:
+    inputs:
+      skip-lint:
+        type: boolean
+        description: 'Skip linting'
+        required: false
+        default: false
+      skip-build:
+        type: boolean
+        description: 'Skip build'
+        required: false
+        default: false
+
+jobs:
+  lint:
+    name: Run Linters and Formatters
+    if: ${{ !inputs.skip-lint }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Run ESLint
+        run: pnpm lint
+
+      - name: Run Prettier
+        run: pnpm format
+
+  build:
+    name: Build & Test
+    if: ${{ !inputs.skip-build }}
+    needs: [lint]
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Install Playwright Browsers
+        run: pnpm playwright:install
+
+      - name: Build
+        run: pnpm build
+
+      - name: Test
+        run: pnpm test

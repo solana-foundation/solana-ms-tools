@@ -7,14 +7,13 @@
       ],
       "dependsOn": ["^build"]
     },
-    "build:ci": {
+    "prepublish": {
       "outputs": [
         "dist/**"
       ],
-      "dependsOn": ["^build:ci"]
+      "dependsOn": ["^prepublish"]
     },
     "clear": {
-      "dependsOn": ["^clear"]
     },
     "dev": {
       "cache": false,
@@ -31,11 +30,9 @@
     },
     "storybook": {
       "cache": false,
-      "persistent": true,
-      "dependsOn": ["^build"]
+      "persistent": true
     },
     "test": {
-      "dependsOn": ["lint", "^build"]
     }
   },
   "globalEnv": []

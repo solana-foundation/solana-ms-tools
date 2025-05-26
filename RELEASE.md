@@ -50,6 +50,7 @@ This document outlines the step-by-step process for releasing new versions of th
    - Create a new tag:
    ```bash
    git tag v[version]
+   git push origin v[version]
    ```
 
 ## Package-specific Considerations

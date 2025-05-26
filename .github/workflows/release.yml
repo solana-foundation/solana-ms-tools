@@ -11,6 +11,10 @@ env:
   CARGO_TERM_COLOR: always
   TURBO_TELEMETRY_DISABLED: 1
 
+permissions:
+  packages: write
+  contents: read
+
 jobs:
   build:
     uses: ./.github/workflows/build.yml

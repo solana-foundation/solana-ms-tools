@@ -42,6 +42,10 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --alert-success: var(--highlight);
+  --alert-error: var(--destructive);
+  --alert-warning: oklch(0.75 0.2 80);
+  --alert-info: oklch(0.65 0.2 250);
 }
 
 /* every change within .dark block should be duplicated
@@ -81,6 +85,10 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+  --alert-success: var(--highlight);
+  --alert-error: var(--destructive);
+  --alert-warning: oklch(0.75 0.2 80);
+  --alert-info: oklch(0.65 0.2 250);
 }
 
 /* equal to .dark tokens */
@@ -120,6 +128,10 @@
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(0.269 0 0);
     --sidebar-ring: oklch(0.439 0 0);
+    --alert-success: var(--highlight);
+    --alert-error: var(--destructive);
+    --alert-warning: oklch(0.75 0.2 80);
+    --alert-info: oklch(0.65 0.2 250);
   }
 }
 
@@ -167,6 +179,10 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-alert-success: var(--alert-success);
+  --color-alert-error: var(--alert-error);
+  --color-alert-warning: var(--alert-warning);
+  --color-alert-info: var(--alert-info);
 }
 
 @layer base {

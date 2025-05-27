@@ -20,7 +20,8 @@
     "**/*.tsx",
     "next-env.d.ts",
     "next.config.mjs",
-    ".storybook/*.ts",
+    ".storybook/**/*.ts",
+    ".storybook/**/*.tsx",
     "src/**/*"
   ],
   "exclude": ["node_modules", "dist", "storybook-static/**"]

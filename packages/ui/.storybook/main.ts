@@ -19,6 +19,9 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
+  core: {
+    disableTelemetry: true,
+  },
   viteFinal: async (config) => {
     config.resolve = {
       ...config.resolve,

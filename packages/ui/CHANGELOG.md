@@ -1,5 +1,11 @@
 # @hoodieshq/ms-tools-ui
 
+## 0.4.1
+
+### Patch Changes
+
+- Added exports for new components
+
 ## 0.4.0
 
 ### Minor Changes

@@ -15,7 +15,7 @@ const preview: Preview = {
       },
     },
     backgrounds: {
-      default: 'light',
+      default: 'dark',
       values: [
         {
           name: 'light',
@@ -36,7 +36,7 @@ const preview: Preview = {
         light: 'light',
         dark: 'dark',
       },
-      defaultTheme: 'light',
+      defaultTheme: 'dark',
     }),
   ],
 }

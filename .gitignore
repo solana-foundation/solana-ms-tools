@@ -80,7 +80,7 @@ packages/**/build
 packages/**/dist
 
 *storybook.log
-*/storybook-static
+packages/**/storybook-static
 coverage
 */coverage
 

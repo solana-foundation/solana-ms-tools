@@ -1,5 +1,11 @@
 # @hoodieshq/ms-tools-ui
 
+## 0.6.0
+
+### Minor Changes
+
+- Add Textarea, Switch, Toggle, ToggleGroup, Tabs components
+
 ## 0.5.0
 
 ### Minor Changes

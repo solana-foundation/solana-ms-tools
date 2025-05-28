@@ -51,13 +51,15 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --table-head-background: oklab(0.97 0 0);
+  --switch-thumb-unchecked: oklch(0.985 0 0);
+  --switch-track-unchecked: oklch(0.922 0 0);
 }
 
 /* System preference - dark theme */
 @media (prefers-color-scheme: dark) {
   :root:not(.light), :root:is(.dark) {
     --background: oklch(0.22 0.01 0);
-    --foreground: oklch(0.25 0.01 0);
+    --foreground: oklch(0.985 0 0);
     --card: oklch(0.145 0 0);
     --card-foreground: oklch(0.985 0 0);
     --popover: oklch(0.145 0 0);
@@ -96,13 +98,15 @@
     --sidebar-border: oklch(0.269 0 0);
     --sidebar-ring: oklch(0.439 0 0);
     --table-head-background: oklch(0.2071 0.0095 170.41);
+    --switch-thumb-unchecked: oklch(0.985 0 0);
+    --switch-track-unchecked: oklch(0.35 0 0);
   }
 }
 
 /* Explicit dark theme - overrides system preference */
 .dark {
   --background: oklch(0.22 0.01 0);
-  --foreground: oklch(0.25 0.01 0);
+  --foreground: oklch(0.985 0 0);
   --card: oklch(0.145 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.145 0 0);
@@ -141,6 +145,8 @@
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
   --table-head-background: oklch(0.2071 0.0095 170.41);
+  --switch-thumb-unchecked: oklch(0.985 0 0);
+  --switch-track-unchecked: oklch(0.35 0 0);
 }
 
 /* https://tailwindcss.com/docs/theme#referencing-other-variables */
@@ -191,6 +197,8 @@
   --color-alert-error: var(--alert-error);
   --color-alert-warning: var(--alert-warning);
   --color-alert-info: var(--alert-info);
+  --color-switch-thumb-unchecked: var(--switch-thumb-unchecked);
+  --color-switch-track-unchecked: var(--switch-track-unchecked);
 }
 
 @layer base {

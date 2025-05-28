@@ -1,6 +1,6 @@
 {
   "name": "@hoodieshq/ms-tools-ui",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Reusable React components built with React, Tailwind CSS, and Shadcn, forming the visual building blocks of microsites",
   "main": ".",
   "types": "./dist/index.d.ts",
@@ -45,6 +45,10 @@
     "@radix-ui/react-select": "^2.2.4",
     "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-switch": "^1.2.5",
+    "@radix-ui/react-tabs": "^1.1.12",
+    "@radix-ui/react-toggle": "^1.1.9",
+    "@radix-ui/react-toggle-group": "^1.1.10",
     "@radix-ui/react-tooltip": "^1.2.7",
     "@tailwindcss/postcss": "^4.1.5",
     "@testing-library/dom": "^10.4.0",

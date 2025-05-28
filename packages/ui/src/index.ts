@@ -1,5 +1,8 @@
 import './styles/globals.css'
 
+export * from './lib/utils/index'
+export * from './hooks/use-mobile'
+
 export * from './components/address'
 export * from './components/alert'
 export * from './components/alert-dialog'

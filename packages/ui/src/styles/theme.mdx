@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Styles/Theme Colors" />
+
+## Usage
+
+Here is the link to documentation: <a href="https://tailwindcss.com/docs/theme">TailwindCSS Theme</a>
+
+You can use these theme variables in your CSS by accessing them via Tailwind@4 class notation like so:
+
+```tsx
+<div className="bg-primary">
+  <p>Hello</p>
+</div>
+// Or
+<div className="bg-(color:--highlight)">
+  <p>Hello</p>
+</div>
+```
+
+Either through the CSS variables:
+
+```css
+.my-element {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+```
+
+<a href="?path=/story/styles-themeviewer--default&globals=theme:light">The theme</a> supports both light and dark modes, which can be toggled using the button above or Storybook's theme switcher.

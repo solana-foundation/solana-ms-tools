@@ -23,7 +23,7 @@ const preview: Preview = {
         },
         {
           name: 'dark',
-          value: '#000',
+          value: '#1d181a',
         },
       ],
     },

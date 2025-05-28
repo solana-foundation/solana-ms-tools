@@ -1,5 +1,18 @@
 # @hoodieshq/ms-tools-ui
 
+## 0.7.0
+
+### Minor Changes
+
+- Syncronize theme with the default design
+
+-- `--higlight` changed to `--accent`
+-- `--failure-*` removed
+-- added `--accent-secondary`
+-- added `--table-background`
+-- added custom tokens: `--info`, `--success`, `--surface`, `--table-stroke`
+-- updated `--background`, `--foreground`, `--muted`, `--border` and `--destructive` colours
+
 ## 0.6.0
 
 ### Minor Changes

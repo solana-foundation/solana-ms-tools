@@ -11,7 +11,7 @@ importers:
       '@changesets/cli':
         specifier: ^2.29.2
         version: 2.29.2
-      '@hoodieshq/ms-tools-config':
+      '@solana/ms-tools-config':
         specifier: workspace:^
         version: link:packages/config
       '@ianvs/prettier-plugin-sort-imports':
@@ -56,7 +56,7 @@ importers:
 
   packages/analytics:
     dependencies:
-      '@hoodieshq/ms-tools-config':
+      '@solana/ms-tools-config':
         specifier: workspace:^
         version: link:../config
       '@ianvs/prettier-plugin-sort-imports':
@@ -181,7 +181,7 @@ importers:
 
   packages/integrations:
     dependencies:
-      '@hoodieshq/ms-tools-config':
+      '@solana/ms-tools-config':
         specifier: workspace:^
         version: link:../config
       '@ianvs/prettier-plugin-sort-imports':
@@ -221,7 +221,7 @@ importers:
 
   packages/ui:
     dependencies:
-      '@hoodieshq/ms-tools-config':
+      '@solana/ms-tools-config':
         specifier: workspace:^
         version: link:../config
       '@hookform/resolvers':

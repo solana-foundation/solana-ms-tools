@@ -1,5 +1,5 @@
 {
-  "name": "@hoodieshq/ms-tools",
+  "name": "@solana/ms-tools",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.2",
-    "@hoodieshq/ms-tools-config": "workspace:^",
+    "@solana/ms-tools-config": "workspace:^",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@manypkg/cli": "^0.23.0",
     "browserslist-lint": "^0.3.3",

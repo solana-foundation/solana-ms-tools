@@ -1,5 +1,5 @@
 {
-  "name": "@hoodieshq/ms-tools-ui",
+  "name": "@solana/ms-tools-ui",
   "version": "0.8.2",
   "description": "Reusable React components built with React, Tailwind CSS, and Shadcn, forming the visual building blocks of microsites",
   "main": ".",
@@ -30,7 +30,7 @@
     "react-dom": "^18.0.0 || ^19.1.0"
   },
   "dependencies": {
-    "@hoodieshq/ms-tools-config": "workspace:^",
+    "@solana/ms-tools-config": "workspace:^",
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-alert-dialog": "^1.1.14",
     "@radix-ui/react-aspect-ratio": "^1.1.7",
@@ -98,6 +98,7 @@
     "vitest": "^3.1.2"
   },
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "restricted"
   }
 }

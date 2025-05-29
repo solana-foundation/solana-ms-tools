@@ -1,5 +1,5 @@
 {
-  "name": "@hoodieshq/ms-tools-config",
+  "name": "@solana/ms-tools-config",
   "version": "0.1.0",
   "description": "Shared ESLint and Prettier configurations to ensure consistent code style and quality across all Solana microsite projects",
   "keywords": [
@@ -69,6 +69,7 @@
     "tsup": "^8.2.4"
   },
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "restricted"
   }
 }

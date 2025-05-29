@@ -1,4 +1,4 @@
-# @hoodieshq/ms-tools-ui
+# @solana/ms-tools-ui
 
 ## 0.8.2
 

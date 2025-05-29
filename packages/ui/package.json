@@ -30,7 +30,6 @@
     "react-dom": "^18.0.0 || ^19.1.0"
   },
   "dependencies": {
-    "@solana/ms-tools-config": "workspace:^",
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-alert-dialog": "^1.1.14",
     "@radix-ui/react-aspect-ratio": "^1.1.7",
@@ -50,6 +49,7 @@
     "@radix-ui/react-toggle": "^1.1.9",
     "@radix-ui/react-toggle-group": "^1.1.10",
     "@radix-ui/react-tooltip": "^1.2.7",
+    "@solana/ms-tools-config": "workspace:^",
     "@tailwindcss/postcss": "^4.1.5",
     "@testing-library/dom": "^10.4.0",
     "class-variance-authority": "^0.7.1",

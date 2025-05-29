@@ -25,8 +25,8 @@
     "sanity": "^3.88.3"
   },
   "dependencies": {
-    "@solana/ms-tools-config": "workspace:^",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@solana/ms-tools-config": "workspace:^",
     "@testing-library/dom": "^10.4.0",
     "@types/node": "^22.15.3",
     "prettier": "^3.5.3"

@@ -1,5 +1,11 @@
 # @hoodieshq/ms-tools-ui
 
+## 0.8.1
+
+### Patch Changes
+
+- Card component - rounding fix
+
 ## 0.8.0
 
 ### Minor Changes

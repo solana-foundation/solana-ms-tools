@@ -1,5 +1,11 @@
 # @hoodieshq/ms-tools-ui
 
+## 0.8.2
+
+### Patch Changes
+
+- Toast component styling
+
 ## 0.8.1
 
 ### Patch Changes

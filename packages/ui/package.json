@@ -1,6 +1,6 @@
 {
   "name": "@solana/ms-tools-ui",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "Reusable React components built with React, Tailwind CSS, and Shadcn, forming the visual building blocks of microsites",
   "main": ".",
   "types": "./dist/index.d.ts",

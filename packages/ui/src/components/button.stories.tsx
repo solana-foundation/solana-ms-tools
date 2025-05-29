@@ -91,6 +91,6 @@ export const Icon: Story = {
   args: {
     variant: 'default',
     size: 'icon',
-    children: <span className="h-4 w-4">❤️</span>, // Replace with an actual icon component
+    children: <span>❤️</span>, // Replace with an actual icon component
   },
 }

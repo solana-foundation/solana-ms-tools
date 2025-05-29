@@ -1,5 +1,12 @@
 # @hoodieshq/ms-tools-ui
 
+## 0.8.0
+
+### Minor Changes
+
+- 1d659ac: Button component styles adjustments
+- b5047a3: Card component styles adjustments
+
 ## 0.7.1
 
 ### Patch Changes

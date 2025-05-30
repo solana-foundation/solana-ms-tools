@@ -1,4 +1,12 @@
-# @hoodieshq/ms-tools-ui
+# @solana/ms-tools-ui
+
+## 0.8.3
+
+### Patch Changes
+
+- Updates packages' scope
+- Updated dependencies
+  - @solana/ms-tools-config@0.1.1
 
 ## 0.8.2
 

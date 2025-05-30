@@ -1,6 +1,6 @@
 {
-  "name": "@hoodieshq/ms-tools-integrations",
-  "version": "0.1.0",
+  "name": "@solana/ms-tools-integrations",
+  "version": "0.1.1",
   "description": "Handles integrations with third-party services like HubSpot, providing a centralized location for managing these connections",
   "main": "dist/index.js",
   "type": "module",
@@ -25,8 +25,8 @@
     "sanity": "^3.88.3"
   },
   "dependencies": {
-    "@hoodieshq/ms-tools-config": "workspace:^",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@solana/ms-tools-config": "workspace:^",
     "@testing-library/dom": "^10.4.0",
     "@types/node": "^22.15.3",
     "prettier": "^3.5.3"
@@ -41,6 +41,7 @@
     "vitest": "^3.1.2"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
   }
 }

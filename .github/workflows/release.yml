@@ -5,8 +5,7 @@ on:
     branches: [main]
 
 env:
-  # TODO: replace organization or scope after the transfer
-  PACKAGE_SCOPE: '@hoodieshq'
+  PACKAGE_SCOPE: '@solana'
   CARGO_TERM_COLOR: always
   TURBO_TELEMETRY_DISABLED: 1
 
@@ -33,10 +32,10 @@ jobs:
 
       - name: Set up .npmrc for GitHub Packages
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${AUTH_TOKEN}" >> ~/.npmrc
           echo "${PACKAGE_SCOPE}:registry=https://npm.pkg.github.com" >> ~/.npmrc
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PACKAGE_SCOPE: ${{ env.PACKAGE_SCOPE }}
 
       - name: Prepare for publishing

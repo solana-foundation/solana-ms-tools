@@ -6,10 +6,9 @@ This is the core repository containing reusable packages for building Solana mic
 
 ## Packages
 
-* **@solana/ms-tools-ui**: Reusable React components are built with React, Tailwind CSS, and Shadcn, forming the visual building blocks of microsites.
-* **@solana/ms-tools-config**: Shared ESLint and Prettier configurations to ensure consistent code style and quality across all projects.
-* **@solana/ms-tools-analytics**: ⚠️ [WIP] Logic for integrating Google Analytics into microsites.
-* **@solana/ms-tools-integrations**: Handles integrations with third-party services like Sanity CMS, providing a centralized location for managing these connections.
+- **@solana/ms-tools-ui**: UI components for microsites.
+- **@solana/ms-tools-integrations**: Integration utilities for microsites.
+- **@solana/ms-tools-config**: Shared configuration for microsites.
 
 ## Usage
 

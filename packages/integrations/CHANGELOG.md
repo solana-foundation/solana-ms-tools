@@ -1,4 +1,4 @@
-# @solana/ms-tools-integrations
+# @solana-foundation/ms-tools-integrations
 
 ## 0.1.1
 
@@ -6,4 +6,4 @@
 
 - Updates packages' scope
 - Updated dependencies
-  - @solana/ms-tools-config@0.1.1
+  - @solana-foundation/ms-tools-config@0.1.1

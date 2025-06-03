@@ -1,4 +1,4 @@
-# @solana/ms-tools-ui
+# @solana-foundation/ms-tools-ui
 
 Reusable React components built with React, Tailwind CSS, and Shadcn, forming the visual building blocks of Solana microsites.
 
@@ -15,17 +15,17 @@ Reusable React components built with React, Tailwind CSS, and Shadcn, forming th
 
 ## Installation
 
-First, configure your project to use the GitHub registry for the @solana scope:
+First, configure your project to use the GitHub registry for the @solana-foundation scope:
 
 ```bash
 # .npmrc
-@solana:registry=https://npm.pkg.github.com
+@solana-foundation:registry=https://npm.pkg.github.com
 ```
 
 Then install the package:
 
 ```bash
-pnpm add @solana/ms-tools-ui
+pnpm add @solana-foundation/ms-tools-ui
 ```
 
 ## Setup

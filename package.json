@@ -1,5 +1,5 @@
 {
-  "name": "@solana/ms-tools",
+  "name": "@solana-foundation/ms-tools",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -27,7 +27,7 @@
     "@changesets/cli": "^2.29.2",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@manypkg/cli": "^0.23.0",
-    "@solana/ms-tools-config": "workspace:^",
+    "@solana-foundation/ms-tools-config": "workspace:^",
     "browserslist-lint": "^0.3.3",
     "concurrently": "^9.1.2",
     "eslint": "^9.25.1",

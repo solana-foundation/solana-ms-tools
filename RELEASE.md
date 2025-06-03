@@ -1,6 +1,6 @@
 # Release Process
 
-This document outlines the step-by-step process for releasing new versions of the @solana/ms-tools packages.
+This document outlines the step-by-step process for releasing new versions of the @solana-foundation/ms-tools packages.
 
 ## Prerequisites
 
@@ -54,18 +54,18 @@ This document outlines the step-by-step process for releasing new versions of th
 
 ## Package-specific Considerations
 
-### @solana/ms-tools-ui
+### @solana-foundation/ms-tools-ui
 
 - Ensure all component documentation is updated
 - Check that the Storybook build is successful
 - Verify visual regression tests
 
-### @solana/ms-tools-integrations
+### @solana-foundation/ms-tools-integrations
 
 - Test all third-party integrations
 - Verify API compatibility
 
-### @solana/ms-tools-config
+### @solana-foundation/ms-tools-config
 
 - Document any breaking changes in ESLint or Prettier configs
 - Update migration guides if necessary
@@ -77,7 +77,7 @@ If issues are discovered after release:
 1. Tag the problematic version as deprecated:
 
    ```bash
-   pnpm deprecate @solana/[package-name]@version "Reason for deprecation" --registry=https://npm.pkg.github.com
+   pnpm deprecate @solana-foundation/[package-name]@version "Reason for deprecation" --registry=https://npm.pkg.github.com
    ```
 
 2. Roll back to the previous version:

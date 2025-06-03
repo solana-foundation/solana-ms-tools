@@ -1,4 +1,4 @@
-# @solana/ms-tools-integrations
+# @solana-foundation/ms-tools-integrations
 
 Handles integrations with third-party services, providing a centralized location for managing these connections for Solana microsites.
 
@@ -20,7 +20,7 @@ Handles integrations with third-party services, providing a centralized location
 ## Installation
 
 ```bash
-pnpm add @solana/ms-tools-integrations
+pnpm add @solana-foundation/ms-tools-integrations
 ```
 
 ## Usage

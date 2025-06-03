@@ -17,7 +17,7 @@ importers:
       '@manypkg/cli':
         specifier: ^0.23.0
         version: 0.23.0
-      '@solana/ms-tools-config':
+      '@solana-foundation/ms-tools-config':
         specifier: workspace:^
         version: link:packages/config
       browserslist-lint:
@@ -150,7 +150,7 @@ importers:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.4.1
         version: 4.4.1(prettier@3.5.3)
-      '@solana/ms-tools-config':
+      '@solana-foundation/ms-tools-config':
         specifier: workspace:^
         version: link:../config
       '@testing-library/dom':
@@ -244,7 +244,7 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: ^1.2.7
         version: 1.2.7(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@solana/ms-tools-config':
+      '@solana-foundation/ms-tools-config':
         specifier: workspace:^
         version: link:../config
       '@tailwindcss/postcss':
@@ -12960,7 +12960,7 @@ snapshots:
       magic-string: 0.30.17
       sirv: 3.0.1
       tinyrainbow: 2.0.0
-      vitest: 3.1.2(@types/node@22.15.3)(@vitest/browser@3.1.2)(jiti@2.4.2)(jsdom@23.2.0)(less@4.3.0)(lightningcss@1.29.2)(sugarss@5.0.0(postcss@8.5.3))(terser@5.39.0)(yaml@2.7.1)
+      vitest: 3.1.2(@types/node@22.15.3)(@vitest/browser@3.1.2)(jiti@2.4.2)(jsdom@26.1.0)(less@4.3.0)(lightningcss@1.29.2)(sugarss@5.0.0(postcss@8.5.3))(terser@5.39.0)(yaml@2.7.1)
       ws: 8.18.1
     optionalDependencies:
       playwright: 1.52.0

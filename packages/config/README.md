@@ -1,4 +1,4 @@
-# @solana/ms-tools-config
+# @solana-foundation/ms-tools-config
 
 This package provides shared configuration for ESLint, Prettier, Vitest, Stylelint, and TypeScript used across the Solana Microsite Framework project. It aims to enforce consistent code style and quality standards throughout all microsites.
 
@@ -47,7 +47,7 @@ This package is part of the Solana Microsite Framework, serving as the central c
 ## Installation
 
 ```bash
-pnpm add -D @solana/ms-tools-config
+pnpm add -D @solana-foundation/ms-tools-config
 ```
 
 ## Usage
@@ -57,7 +57,7 @@ pnpm add -D @solana/ms-tools-config
 Create `eslint.config.js` in your project root:
 
 ```javascript
-import baseConfig from '@solana/ms-tools-config/eslint.config.base.js'
+import baseConfig from '@solana-foundation/ms-tools-config/eslint.config.base.js'
 
 export default [
   ...baseConfig,
@@ -72,7 +72,7 @@ export default [
 Create `prettier.config.js`:
 
 ```javascript
-import baseConfig from '@solana/ms-tools-config/prettier.config.js'
+import baseConfig from '@solana-foundation/ms-tools-config/prettier.config.js'
 
 export default {
   ...baseConfig,
@@ -86,7 +86,7 @@ Extend the base configuration in your `tsconfig.json`:
 
 ```json
 {
-  "extends": "@solana/ms-tools-config/tsconfig.json",
+  "extends": "@solana-foundation/ms-tools-config/tsconfig.json",
   "compilerOptions": {
     "baseUrl": "./src"
   },
@@ -99,7 +99,7 @@ Extend the base configuration in your `tsconfig.json`:
 Create `stylelint.config.js`:
 
 ```javascript
-import baseConfig from '@solana/ms-tools-config/stylelint.config.js'
+import baseConfig from '@solana-foundation/ms-tools-config/stylelint.config.js'
 
 export default {
   extends: [baseConfig],
@@ -112,7 +112,7 @@ export default {
 Create `vitest.config.ts`:
 
 ```typescript
-import baseConfig from '@solana/ms-tools-config/vitest.config.js'
+import baseConfig from '@solana-foundation/ms-tools-config/vitest.config.js'
 
 export default {
   ...baseConfig,
@@ -125,7 +125,7 @@ export default {
 Create `postcss.config.js`:
 
 ```javascript
-import baseConfig from '@solana/ms-tools-config/postcss.config.js'
+import baseConfig from '@solana-foundation/ms-tools-config/postcss.config.js'
 
 export default {
   ...baseConfig,

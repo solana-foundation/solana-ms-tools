@@ -1,4 +1,4 @@
-# @solana/ms-tools-ui
+# @solana-foundation/ms-tools-ui
 
 ## 0.8.3
 
@@ -6,7 +6,7 @@
 
 - Updates packages' scope
 - Updated dependencies
-  - @solana/ms-tools-config@0.1.1
+  - @solana-foundation/ms-tools-config@0.1.1
 
 ## 0.8.2
 

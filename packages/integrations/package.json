@@ -1,5 +1,5 @@
 {
-  "name": "@solana/ms-tools-integrations",
+  "name": "@solana-foundation/ms-tools-integrations",
   "version": "0.1.1",
   "description": "Handles integrations with third-party services like HubSpot, providing a centralized location for managing these connections",
   "main": "dist/index.js",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
-    "@solana/ms-tools-config": "workspace:^",
+    "@solana-foundation/ms-tools-config": "workspace:^",
     "@testing-library/dom": "^10.4.0",
     "@types/node": "^22.15.3",
     "prettier": "^3.5.3"

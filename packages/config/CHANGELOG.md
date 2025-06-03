@@ -1,4 +1,4 @@
-# @solana/ms-tools-config
+# @solana-foundation/ms-tools-config
 
 ## 0.1.1
 

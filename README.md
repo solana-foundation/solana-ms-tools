@@ -1,4 +1,5 @@
 # @solana-foundation/ms-tools
+[![Release Workflow](https://github.com/solana-foundation/solana-ms-tools/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/solana-foundation/solana-ms-tools/actions/workflows/release.yml)
 
 ## Overview
 

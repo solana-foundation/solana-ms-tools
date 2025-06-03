@@ -3,6 +3,9 @@ name: Release Workflow
 on:
   push:
     branches: [main]
+  pull_request:
+    branches:
+      - chore/publishing
 
 env:
   PACKAGE_SCOPE: '@solana-foundation'

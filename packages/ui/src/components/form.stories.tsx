@@ -254,14 +254,14 @@ export const Default: Story = {
   render: () => <DefaultForm />,
 }
 
-export const WithInitialValues: Story = {
+export const InitialValues: Story = {
   render: () => <InitialValuesForm />,
 }
 
-export const WithValidationErrors: Story = {
+export const ValidationErrors: Story = {
   render: () => <ValidationErrorsForm />,
 }
 
-export const WithDisabledFields: Story = {
+export const DisabledFields: Story = {
   render: () => <DisabledFieldsForm />,
 }

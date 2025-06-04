@@ -1,65 +1,72 @@
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-import { storybookTest } from '@storybook/experimental-addon-test/vitest-plugin'
+import { fileURLToPath } from 'url'
+import { storybookTest } from '@storybook/addon-vitest/vitest-plugin'
 import { defineConfig } from 'vitest/config'
 
-const dirname =
-  typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url))
-
 // More info at: https://storybook.js.org/docs/writing-tests/test-addon
+// No changes unless the storybookTest API has changed
 export default defineConfig({
   define: {
     'process.env.NODE_ENV': JSON.stringify('test'),
   },
-  resolve: {
-    alias: {
-      process: 'process/browser', // Optional full polyfill
-    },
-  },
   optimizeDeps: {
     include: ['sb-original/default-loader', 'sb-original/image-context', 'react/jsx-dev-runtime'],
+  },
+  resolve: {
+    alias: {
+      process: 'process/browser',
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@/lib/utils/index': fileURLToPath(new URL('.src/lib/utils/index.ts', import.meta.url)),
+      'sb-original/image-context': fileURLToPath(
+        new URL('./test/__mocks__/sb-original.ts', import.meta.url)
+      ),
+      'sb-original/default-loader': fileURLToPath(
+        new URL('./test/__mocks__/sb-original.ts', import.meta.url)
+      ),
+    },
   },
   test: {
     globals: true,
     environment: 'jsdom',
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-      'sb-original/image-context': path.resolve(__dirname, './test/__mocks__/sb-original.ts'),
-      'sb-original/default-loader': path.resolve(__dirname, './test/__mocks__/sb-original.ts'),
-    },
-    workspace: [
-      {
-        extends: true,
-        plugins: [
-          // The plugin will run tests for the stories defined in your Storybook config
-          // See options at: https://storybook.js.org/docs/writing-tests/test-addon#storybooktest
-          storybookTest({ configDir: path.join(dirname, '.storybook') }),
-        ],
-        test: {
-          name: 'storybook',
-          browser: {
-            enabled: true,
-            headless: true,
-            provider: 'playwright',
-            instances: [{ browser: 'chromium' }],
-          },
-          setupFiles: ['.storybook/vitest.setup.ts'],
-        },
-      },
-      {
-        extends: true,
-        test: {
-          name: 'utils',
-          globals: true,
-          environment: 'jsdom',
-          include: ['src/**/*.test.{ts,tsx}'],
-          exclude: ['**/node_modules/**', '**/.storybook/**', '**/*.stories.{ts,tsx}'],
-        },
-      },
+    setupFiles: ['./test/setup.ts'],
+    include: ['**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    exclude: [
+      '**/*.stories.{js,ts,jsx,tsx}',
+      '**/*.story.{js,ts,jsx,tsx}',
+      '**/node_modules/**/*.test.{js,ts,jsx,tsx}',
+      '**/node_modules/**/*.spec.{js,ts,jsx,tsx}',
     ],
+    browser: {
+      enabled: true,
+      name: 'chromium',
+      provider: 'playwright',
+      headless: true,
+    },
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
+      exclude: [
+        'coverage/**',
+        'dist/**',
+        '**/*.stories.{js,ts,jsx,tsx}',
+        '**/*.story.{js,ts,jsx,tsx}',
+        'test/**',
+        '**/*.d.ts',
+        '**/node_modules/**',
+      ],
+    },
+  },
+  storybook: {
+    test: {
+      name: 'storybook',
+      environment: 'jsdom',
+      setupFiles: ['.storybook/vitest.setup.ts'],
+      include: ['**/*.stories.{js,ts,jsx,tsx}', '**/*.story.{js,ts,jsx,tsx}'],
+      exclude: ['**/node_modules/**'],
+      plugins: [
+        storybookTest({
+          configDir: fileURLToPath(new URL('./.storybook', import.meta.url)),
+        }),
+      ],
     },
   },
 })

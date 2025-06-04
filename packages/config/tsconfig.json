@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["node", "@testing-library/dom"],
+    "types": ["node", "@testing-library/dom", "vitest/globals"],
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

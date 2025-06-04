@@ -1,8 +1,9 @@
 import '@solana-foundation/ms-tools-config/test/setup.ts'
 import '@testing-library/jest-dom/vitest'
+
+import React from 'react'
 import { cleanup } from '@testing-library/react'
 import { afterEach, vi } from 'vitest'
-import React from 'react'
 
 // Ensure React is available globally
 global.React = React

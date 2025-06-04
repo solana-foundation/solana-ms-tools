@@ -1,11 +1,11 @@
 {
   "extends": "@solana-foundation/ms-tools-config/tsconfig.json",
   "compilerOptions": {
+    "types": ["node", "@testing-library/dom", "vitest/globals"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["node", "@testing-library/dom", "vitest/globals"],
     "outDir": "./dist",
     "jsx": "react-jsx"
   },
@@ -23,7 +23,8 @@
     "next.config.mjs",
     ".storybook/**/*.ts",
     ".storybook/**/*.tsx",
-    "src/**/*"
+    "src/**/*",
+    "scripts/**/*"
   ],
   "exclude": ["node_modules", "dist", "storybook-static/**"]
 }

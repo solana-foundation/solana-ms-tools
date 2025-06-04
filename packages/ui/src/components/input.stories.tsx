@@ -20,6 +20,7 @@ const meta = {
       control: 'text',
     },
   },
+  render: (args) => <Input {...args} />,
 } satisfies Meta<typeof Input>
 
 export default meta

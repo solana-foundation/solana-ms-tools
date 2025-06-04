@@ -8,6 +8,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  render: (args) => <Skeleton {...args} />,
 } satisfies Meta<typeof Skeleton>
 
 export default meta

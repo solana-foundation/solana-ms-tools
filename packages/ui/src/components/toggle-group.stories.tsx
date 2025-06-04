@@ -9,6 +9,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  render: (args) => <ToggleGroup {...args} />,
 } satisfies Meta<typeof ToggleGroup>
 
 export default meta

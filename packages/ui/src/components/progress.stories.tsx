@@ -9,6 +9,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  render: (args) => <Progress {...args} />,
 } satisfies Meta<typeof Progress>
 
 export default meta

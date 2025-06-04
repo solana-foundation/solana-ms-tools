@@ -15,6 +15,7 @@ const meta: Meta<typeof Dialog> = {
   title: 'Dialog',
   component: Dialog,
   tags: ['autodocs'],
+  render: (args) => <DialogClose {...args} />,
 }
 
 export default meta

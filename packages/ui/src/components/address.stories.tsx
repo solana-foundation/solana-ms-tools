@@ -1,5 +1,7 @@
+import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
+import { withTestProvider } from '../../test/test-utils'
 import { Address } from './address'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
@@ -11,6 +13,8 @@ const meta = {
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   args: { onClick: fn() },
+  decorators: [withTestProvider],
+  render: (args) => <Address {...args} />,
 } satisfies Meta<typeof Address>
 
 export default meta
@@ -32,13 +36,13 @@ export const Truncated: Story = {
     truncateUnknown: true,
     displayAddress: wSolAddress,
   },
-  render(args) {
-    return (
+  decorators: [
+    (Story) => (
       <div className="w-[90px]">
-        <Address {...args} />
+        <Story />
       </div>
-    )
-  },
+    ),
+  ],
 }
 
 export const TruncatedWithLimit: Story = {
@@ -60,14 +64,16 @@ export const AsLink: Story = {
   args: {
     address: wSolAddress,
     asChild: true,
-  },
-  render(args) {
-    return (
-      <Address {...args}>
-        <a onClick={args.onClick} href="javascript:void(0)">
-          {args.address}
-        </a>
-      </Address>
-    )
+    children: (
+      <a
+        href="javascript:void(0)"
+        onClick={(e) => {
+          e.preventDefault()
+          meta.args.onClick()
+        }}
+      >
+        {wSolAddress}
+      </a>
+    ),
   },
 }

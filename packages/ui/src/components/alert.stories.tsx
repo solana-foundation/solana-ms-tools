@@ -8,6 +8,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  render: (args) => <Alert {...args} />,
 } satisfies Meta<typeof Alert>
 
 export default meta

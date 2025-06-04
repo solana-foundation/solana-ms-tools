@@ -11,11 +11,10 @@ import {
   AlertDialogTrigger,
 } from './alert-dialog'
 
-const meta = {
+const meta: Meta<typeof AlertDialog> = {
   title: 'AlertDialog',
   component: AlertDialog,
   tags: ['autodocs'],
-  render: (args) => <AlertDialog {...args} />,
 }
 
 export default meta

@@ -8,6 +8,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  render: (args) => <Textarea {...args} />,
 } satisfies Meta<typeof Textarea>
 
 export default meta

@@ -13,6 +13,7 @@ const meta: Meta<typeof Breadcrumb> = {
   title: 'Breadcrumb',
   component: Breadcrumb,
   tags: ['autodocs'],
+  render: (args) => <Breadcrumb {...args} />,
 }
 
 export default meta

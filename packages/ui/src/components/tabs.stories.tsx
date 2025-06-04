@@ -8,6 +8,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  render: (args) => <Tabs {...args} />,
 } satisfies Meta<typeof Tabs>
 
 export default meta

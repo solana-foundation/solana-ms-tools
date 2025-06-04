@@ -1,5 +1,13 @@
 # @solana-foundation/ms-tools-ui
 
+## 0.8.4
+
+### Patch Changes
+
+- Update dependencies & storybook
+- Updated dependencies
+  - @solana-foundation/ms-tools-config@0.1.2
+
 ## 0.8.3
 
 ### Patch Changes

@@ -8,6 +8,7 @@ const meta = {
   component: Badge,
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   args: { onClick: fn() },
+  render: (args) => <Badge {...args} />,
 } satisfies Meta<typeof Badge>
 
 export default meta

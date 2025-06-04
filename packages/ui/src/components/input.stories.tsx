@@ -20,6 +20,7 @@ const meta = {
       control: 'text',
     },
   },
+  render: (args) => <Input {...args} />,
 } satisfies Meta<typeof Input>
 
 export default meta
@@ -70,7 +71,7 @@ export const Disabled: Story = {
 
 export const WithValue: Story = {
   args: {
-    value: 'Hello World',
+    defaultValue: 'Hello World',
     type: 'text',
   },
 }
@@ -78,7 +79,7 @@ export const WithValue: Story = {
 export const Invalid: Story = {
   args: {
     'aria-invalid': true,
-    value: 'Invalid input',
+    defaultValue: 'Invalid input',
     type: 'text',
   },
 }

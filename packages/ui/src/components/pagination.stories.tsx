@@ -16,6 +16,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  render: (args) => <Pagination {...args} />,
 } satisfies Meta<typeof Pagination>
 
 export default meta

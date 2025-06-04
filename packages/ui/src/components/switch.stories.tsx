@@ -9,6 +9,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  render: (args) => <Switch {...args} />,
 } satisfies Meta<typeof Switch>
 
 export default meta

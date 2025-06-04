@@ -33,6 +33,7 @@ const meta = {
       </div>
     ),
   ],
+  render: (args) => <Sidebar {...args} />,
 } satisfies Meta<typeof Sidebar>
 
 export default meta

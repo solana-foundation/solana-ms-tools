@@ -3,6 +3,7 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
+    name: 'integrations',
     globals: true,
     environment: 'jsdom',
     setupFiles: [resolve(__dirname, 'test/setup')],

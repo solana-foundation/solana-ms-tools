@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const meta = {
   title: 'Card',
   component: Card,
+  render: (args) => <Card {...args} />,
 } satisfies Meta<typeof Card>
 
 export default meta

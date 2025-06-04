@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "types": ["node", "@testing-library/dom"],
     "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

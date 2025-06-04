@@ -7,6 +7,7 @@ const meta: Meta<typeof ThemeViewer> = {
   parameters: {
     layout: 'fullscreen',
   },
+  render: (args) => <ThemeViewer {...args} />,
 }
 
 export default meta

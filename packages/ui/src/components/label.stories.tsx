@@ -9,6 +9,7 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
+  render: (args) => <Label {...args} />,
 } satisfies Meta<typeof Label>
 
 export default meta

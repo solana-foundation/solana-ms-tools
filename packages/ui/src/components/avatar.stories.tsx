@@ -8,6 +8,7 @@ const meta: Meta<typeof Avatar> = {
   parameters: {
     layout: 'centered',
   },
+  render: (args) => <Avatar {...args} />,
   decorators: [
     (Story) => (
       <div className="flex items-center gap-4">

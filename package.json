@@ -24,9 +24,9 @@
     "node": "^20 || ^21 || ^22"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.2",
+    "@changesets/cli": "^2.29.4",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
-    "@manypkg/cli": "^0.23.0",
+    "@manypkg/cli": "^0.24.0",
     "@solana-foundation/ms-tools-config": "workspace:^",
     "browserslist-lint": "^0.3.3",
     "concurrently": "^9.1.2",

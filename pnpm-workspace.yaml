@@ -2,6 +2,8 @@ packages:
   - packages/*
   - '!**/test/**'
 ignoredBuiltDependencies:
+  - '@tailwindcss/oxide'
   - sharp
 onlyBuiltDependencies:
+  - '@swc/core'
   - esbuild

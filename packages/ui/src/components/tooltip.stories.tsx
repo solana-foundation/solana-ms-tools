@@ -16,6 +16,7 @@ const meta = {
       </TooltipProvider>
     ),
   ],
+  render: (args) => <Tooltip {...args} />,
 } satisfies Meta<typeof Tooltip>
 
 export default meta

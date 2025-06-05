@@ -19,27 +19,39 @@ This document outlines the step-by-step process for releasing new versions of th
    - [ ] Review the changes since the last release
    - [ ] Update package changelogs in each modified package
 
-2. **Version Bump**
+2. **Version Management**
 
-   - Determine the type of version bump (major, minor, patch) based on changes
-   - Run the appropriate command:
+   a. Create a changeset to document changes and propose version bump:
 
-     ```bash
-     pnpm changeset
-     ```
+   ```bash
+   pnpm changeset
+   ```
 
-   - Select all updated packages and proceed with:
+   This will:
 
-     ```bash
-     pnpm changeset version
-     ```
+   - Prompt you to select changed packages
+   - Choose the type of version bump (major, minor, patch)
+   - Create a .changeset file documenting the changes
 
-   - This will update changelog and versions
-   - Run to update lockfile:
+   b. Apply version updates:
 
-     ```bash
-     pnpm install
-     ```
+   ```bash
+   pnpm changeset version
+   ```
+
+   This will:
+
+   - Update package versions based on changesets
+   - Update CHANGELOG.md files
+   - Remove the changeset files
+
+   c. Update dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+   This will update the lockfile with new versions
 
 3. **Documentation Updates**
 
@@ -48,9 +60,19 @@ This document outlines the step-by-step process for releasing new versions of th
    - Check that all documentation reflects the latest changes
    - Update any version references in documentation
 
-4. **Merge your changes**
-   Create a pull request to the main branch and merge it.
-   This will trigger the release workflow.
+4. **Release Process**
+
+   a. Create a pull request with your changes
+   b. Ensure all checks pass in the PR
+   c. Get necessary reviews and approvals
+   d. Merge to main branch
+
+   The merge will trigger the automated release workflow, which will:
+
+   - Build all packages
+   - Publish to GitHub Package Registry
+   - Create GitHub Release
+   - Update package documentation
 
 ## Package-specific Considerations
 

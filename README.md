@@ -2,6 +2,8 @@
 
 [![Release Workflow](https://github.com/solana-foundation/solana-ms-tools/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/solana-foundation/solana-ms-tools/actions/workflows/release.yml)
 
+[![Deploy @solana-foundation/ms-tools-ui Storybook with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsolana-foundation%2Fsolana-ms-tools&project-name=ms-tools-ui&repository-name=solana-ms-tools-ui&root-directory=packages/ui&install-command=pnpm%20install&build-command=pnpm%20build-storybook&output-directory=storybook-static)
+
 ## Overview
 
 This is the core repository containing reusable packages for building Solana microsites. It serves as the source of truth for shared components, configurations, and integrations. Packages within this repo are published to npm for easy consumption in individual microsite projects.

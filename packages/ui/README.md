@@ -1,5 +1,7 @@
 # @solana-foundation/ms-tools-ui
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsolana-foundation%2Fsolana-ms-tools%2Ftree%2Fmain%2Fpackages%2Fui)
+
 Reusable React components built with React, Tailwind CSS, and Shadcn, forming the visual building blocks of Solana microsites.
 
 ## Features

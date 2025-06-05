@@ -5,19 +5,25 @@ Handles integrations with third-party services, providing a centralized location
 ## Features
 
 - Multiple third-party service integrations:
-  - Sanity CMS integration
-  - More integrations coming soon
+  - Sanity CMS integration with automatic type generation
+  - API client utilities
 - Centralized management of third-party service connections
 - TypeScript support with full type definitions
-- React hooks for easy integration
-- Configurable service endpoints
 - Error handling and retry logic
 - Rate limiting protection
 - Caching support
 - Environment-based configuration
-- Automatic type generation from Sanity schemas
 
 ## Installation
+
+First, configure your project to use the GitHub registry:
+
+```bash
+# .npmrc
+@solana-foundation:registry=https://npm.pkg.github.com
+```
+
+Then install the package:
 
 ```bash
 pnpm add @solana-foundation/ms-tools-integrations
@@ -25,13 +31,27 @@ pnpm add @solana-foundation/ms-tools-integrations
 
 ## Usage
 
-## Requirements
+### Sanity CMS Integration
 
-This package requires the following peer dependencies:
+```typescript
+import { createSanityClient } from '@solana-foundation/ms-tools-integrations'
 
-- `react` ^18.0.0
-- `sanity` ^3.88.3
-- `next-sanity` ^9.11.1
+const client = createSanityClient({
+  projectId: 'your-project-id',
+  dataset: 'production',
+  apiVersion: '2024-03-21'
+})
+
+// Using with React hooks
+import { useSanityQuery } from '@solana-foundation/ms-tools-integrations'
+
+function MyComponent() {
+  const { data, isLoading } = useSanityQuery('*[_type == "post"]')
+
+  if (isLoading) return <div>Loading...</div>
+  return <div>{/* Render your data */}</div>
+}
+```
 
 ## Development
 
@@ -48,4 +68,8 @@ pnpm build
 
 ## Supported Integrations
 
-- Sanity
+- Sanity CMS
+
+## Contributing
+
+Please refer to the [main repository's contributing guidelines](../../README.md#contributing).

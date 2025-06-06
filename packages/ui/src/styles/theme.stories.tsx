@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import ThemeViewer from './theme'
 
 const meta: Meta<typeof ThemeViewer> = {

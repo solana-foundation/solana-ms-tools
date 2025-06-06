@@ -1,5 +1,5 @@
 import { SelectGroup } from '@radix-ui/react-select'
-import { Meta, StoryObj } from '@storybook/react'
+import { Meta, StoryObj } from '@storybook/react-vite'
 import { Apple, Carrot, Citrus } from 'lucide-react'
 import {
   Select,

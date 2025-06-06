@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import { toast } from 'sonner'
 import { Alert, AlertDescription, AlertTitle } from './alert'
 import { Button } from './button'

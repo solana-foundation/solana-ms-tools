@@ -8,7 +8,7 @@ import { Separator } from '@/components/separator'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from '@/components/sheet'
 import { Skeleton } from '@/components/skeleton'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/tooltip'
-import { useIsMobile } from '@/hooks/use-mobile'
+import { useIsMobile } from '@/hooks/use-is-mobile'
 import { cn } from '@/lib/utils/index'
 
 const SIDEBAR_COOKIE_NAME = 'sidebar_state'

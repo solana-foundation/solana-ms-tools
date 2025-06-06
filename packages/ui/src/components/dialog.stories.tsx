@@ -1,5 +1,5 @@
 import { DialogClose } from '@radix-ui/react-dialog'
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Button } from './button'
 import {
   Dialog,

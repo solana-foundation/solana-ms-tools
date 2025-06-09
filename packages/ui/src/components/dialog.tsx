@@ -61,7 +61,7 @@ function DialogContent({
     </>
   )
 
-  return renderPortal ? <DialogPortal data-slot="dialog-portal">{content}</DialogPortal> : content
+  return renderPortal ? <DialogPortal>{content}</DialogPortal> : content
 }
 
 function DialogHeader({ className, ...props }: React.ComponentProps<'div'>) {

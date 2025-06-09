@@ -40,14 +40,14 @@ export const WithDescription: Story = {
         <RadioGroupItem value="card" id="card" className="mt-1" />
         <div>
           <Label htmlFor="card">Card Payment</Label>
-          <p className="text-muted-foreground text-sm">Pay with your credit or debit card.</p>
+          <p className="text-sm">Pay with your credit or debit card.</p>
         </div>
       </div>
       <div className="flex items-start gap-2">
         <RadioGroupItem value="paypal" id="paypal" className="mt-1" />
         <div>
           <Label htmlFor="paypal">PayPal</Label>
-          <p className="text-muted-foreground text-sm">Pay with your PayPal account.</p>
+          <p className="text-sm">Pay with your PayPal account.</p>
         </div>
       </div>
     </RadioGroup>

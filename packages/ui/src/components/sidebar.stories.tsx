@@ -182,7 +182,7 @@ export const WithCustomStyling: Story = {
       <Sidebar className="bg-gradient-to-b from-blue-500/10 to-purple-500/10">
         <SidebarHeader className="border-b">
           <SidebarTrigger className="text-primary" />
-          <SidebarInput className="bg-white/50 backdrop-blur-sm" placeholder="Search..." />
+          <SidebarInput className="text-white backdrop-blur-sm" placeholder="Search..." />
         </SidebarHeader>
         <SidebarContent>
           <SidebarGroup>

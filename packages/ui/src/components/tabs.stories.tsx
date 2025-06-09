@@ -24,7 +24,7 @@ export const Default: Story = {
       <TabsContent value="account" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Account Settings</h4>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-sm">
             Configure how your account information is displayed and managed.
           </p>
         </div>
@@ -32,9 +32,7 @@ export const Default: Story = {
       <TabsContent value="password" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Password Settings</h4>
-          <p className="text-muted-foreground text-sm">
-            Update your password and security preferences.
-          </p>
+          <p className="text-sm">Update your password and security preferences.</p>
         </div>
       </TabsContent>
     </Tabs>
@@ -52,7 +50,7 @@ export const ThreeTabs: Story = {
       <TabsContent value="overview" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Overview</h4>
-          <p className="text-muted-foreground text-sm">
+          <p className="text-sm">
             Get a high-level view of your account status and recent activity.
           </p>
         </div>
@@ -60,15 +58,13 @@ export const ThreeTabs: Story = {
       <TabsContent value="analytics" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Analytics</h4>
-          <p className="text-muted-foreground text-sm">
-            View detailed analytics and performance metrics.
-          </p>
+          <p className="text-sm">View detailed analytics and performance metrics.</p>
         </div>
       </TabsContent>
       <TabsContent value="reports" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Reports</h4>
-          <p className="text-muted-foreground text-sm">Access and download your account reports.</p>
+          <p className="text-sm">Access and download your account reports.</p>
         </div>
       </TabsContent>
     </Tabs>
@@ -142,25 +138,19 @@ export const WithIcons: Story = {
       <TabsContent value="music" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Music Library</h4>
-          <p className="text-muted-foreground text-sm">
-            Browse and play your favorite music tracks.
-          </p>
+          <p className="text-sm">Browse and play your favorite music tracks.</p>
         </div>
       </TabsContent>
       <TabsContent value="podcasts" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Podcast Library</h4>
-          <p className="text-muted-foreground text-sm">
-            Listen to your subscribed podcasts and discover new shows.
-          </p>
+          <p className="text-sm">Listen to your subscribed podcasts and discover new shows.</p>
         </div>
       </TabsContent>
       <TabsContent value="live" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Live Streams</h4>
-          <p className="text-muted-foreground text-sm">
-            Watch live streaming content from your favorite creators.
-          </p>
+          <p className="text-sm">Watch live streaming content from your favorite creators.</p>
         </div>
       </TabsContent>
     </Tabs>
@@ -180,21 +170,19 @@ export const Disabled: Story = {
       <TabsContent value="active" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Active Tab</h4>
-          <p className="text-muted-foreground text-sm">This tab is currently active.</p>
+          <p className="text-sm">This tab is currently active.</p>
         </div>
       </TabsContent>
       <TabsContent value="disabled" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Disabled Tab</h4>
-          <p className="text-muted-foreground text-sm">
-            This tab is disabled and cannot be accessed.
-          </p>
+          <p className="text-sm">This tab is disabled and cannot be accessed.</p>
         </div>
       </TabsContent>
       <TabsContent value="pending" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Pending Tab</h4>
-          <p className="text-muted-foreground text-sm">This tab contains pending items.</p>
+          <p className="text-sm">This tab contains pending items.</p>
         </div>
       </TabsContent>
     </Tabs>
@@ -215,17 +203,13 @@ export const CustomWidth: Story = {
       <TabsContent value="tab1" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Custom Width Tab 1</h4>
-          <p className="text-muted-foreground text-sm">
-            This tab uses custom width classes for a wider appearance.
-          </p>
+          <p className="text-sm">This tab uses custom width classes for a wider appearance.</p>
         </div>
       </TabsContent>
       <TabsContent value="tab2" className="rounded-lg border p-4">
         <div className="space-y-4">
           <h4 className="text-sm font-medium">Custom Width Tab 2</h4>
-          <p className="text-muted-foreground text-sm">
-            This tab also uses custom width classes for consistency.
-          </p>
+          <p className="text-sm">This tab also uses custom width classes for consistency.</p>
         </div>
       </TabsContent>
     </Tabs>

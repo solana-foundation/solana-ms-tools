@@ -73,7 +73,7 @@ export const WithinCard: Story = {
     <div className="bg-card text-card-foreground rounded-xl border shadow">
       <div className="p-6">
         <h4 className="leading-none font-medium">Messages</h4>
-        <p className="text-muted-foreground text-sm">Your recent messages.</p>
+        <p className="text-sm">Your recent messages.</p>
       </div>
       <ScrollArea className="h-72" {...args}>
         <div className="px-6 pb-6">

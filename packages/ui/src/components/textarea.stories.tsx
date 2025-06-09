@@ -32,7 +32,7 @@ export const WithLabel: Story = {
         Your message
       </label>
       <Textarea id="message" placeholder="Type your message here." />
-      <p className="text-muted-foreground text-sm">Enter your feedback or comments.</p>
+      <p className="text-sm">Enter your feedback or comments.</p>
     </div>
   ),
 }
@@ -40,7 +40,11 @@ export const WithLabel: Story = {
 export const Disabled: Story = {
   render: () => (
     <div className="w-[400px]">
-      <Textarea disabled placeholder="You cannot edit this textarea." />
+      <Textarea
+        aria-label="Disabled textarea"
+        disabled
+        placeholder="You cannot edit this textarea."
+      />
     </div>
   ),
 }
@@ -83,6 +87,7 @@ export const AutoResizing: Story = {
   render: () => (
     <div className="w-[400px]">
       <Textarea
+        aria-label="Auto-resizing textarea"
         className="min-h-[100px]"
         placeholder="This textarea will auto-resize as you type more content..."
       />
@@ -93,8 +98,12 @@ export const AutoResizing: Story = {
 export const WithMaxLength: Story = {
   render: () => (
     <div className="w-[400px] space-y-2">
-      <Textarea placeholder="Limited to 100 characters..." maxLength={100} />
-      <p className="text-muted-foreground text-sm">Maximum 100 characters allowed.</p>
+      <Textarea
+        aria-label="Limited to 100 characters..."
+        placeholder="Limited to 100 characters..."
+        maxLength={100}
+      />
+      <p className="text-sm">Maximum 100 characters allowed.</p>
     </div>
   ),
 }
@@ -102,7 +111,11 @@ export const WithMaxLength: Story = {
 export const ReadOnly: Story = {
   render: () => (
     <div className="w-[400px]">
-      <Textarea readOnly value="This content is read-only and cannot be modified." />
+      <Textarea
+        aria-label="Read-only textarea"
+        readOnly
+        value="This content is read-only and cannot be modified."
+      />
     </div>
   ),
 }

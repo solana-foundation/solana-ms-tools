@@ -69,9 +69,7 @@ export const WithDescription: Story = {
         >
           Enable notifications
         </label>
-        <p className="text-muted-foreground text-sm">
-          Receive notifications when someone mentions you.
-        </p>
+        <p className="text-sm">Receive notifications when someone mentions you.</p>
       </div>
     </div>
   ),

@@ -1,11 +1,12 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
-@custom-variant light (&:is(.light *));
+@variant dark (&:is(.dark *));
+@variant light (&:is(.light *), &:not(.dark *));
 
-/* Light theme variables (default) */
-:root {
+/* Light theme variables */
+:root,
+:root:is(.light) {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -23,13 +24,13 @@
   --accent-foreground: oklch(0.383 0.0634 171.65);
   --destructive: oklch(0.7332 0.2632 327.1);
   --destructive-foreground: oklch(0.642 0.2632 327.1);
-  --success: oklch(0.82 0.21 152.22);
+  --success: oklch(0.8215 0.2068 152.19);
   --success-foreground: oklch(0.46 0.11 153.27);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
-  --alert-success: var(--success);
-  --alert-error: var(--destructive);
+  --alert-success: var(--accent-secondary);
+  --alert-error: var(--destructive-foreground);
   --alert-warning: oklch(0.75 0.2 80);
   --alert-info: var(--info);
   --card-border: oklch(0.922 0 0);
@@ -49,71 +50,16 @@
   --sidebar-ring: oklch(0.708 0 0);
   --switch-thumb-unchecked: oklch(0.985 0 0);
   --switch-track-unchecked: oklch(0.922 0 0);
-  /* custom colors */
   --info: oklch(0.7095 0.1028 208.28);
-  --success: oklch(0.8215 0.2068 152.19);
+  --warning: oklch(0.75 0.2 80);
   --surface: oklch(0.2705 0.0087 184.59);
   --table-background: oklab(0.97 0 0);
   --table-head-background: oklch(0.97 0 0);
   --table-stroke: oklch(0 0 0);
 }
 
-/* System preference - dark theme */
-@media (prefers-color-scheme: dark) {
-  :root:not(.light),
-  :root:is(.dark) {
-    --background: oklch(0.2165 0.0078 182.18);
-    --foreground: oklch(1 0 0);
-    --card: oklch(0.2497 0.0089 184.49);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.145 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.985 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.6406 0.0038 174.41);
-    --muted-foreground: oklch(0.5029 0.0052 179.57);
-    --accent: oklch(0.782 0.1646 163.86);
-    --accent-secondary: oklch(0.6138 0.1095 167.55); /* custom */
-    --accent-foreground: oklch(0.383 0.0634 171.65);
-    --destructive: oklch(0.7332 0.2632 327.1);
-    --destructive-foreground: oklch(0.42 0.13 327.63);
-    --border: oklch(0.3128 0.0058 179.33);
-    --input: oklch(0.269 0 0);
-    --ring: oklch(0.439 0 0);
-    --alert-success: var(--success);
-    --alert-error: var(--destructive);
-    --alert-warning: oklch(0.75 0.2 80);
-    --alert-info: var(--info);
-    --card-border: oklch(0.2672 0.0086 169.51);
-    --chart-1: oklch(0.488 0.243 264.376);
-    --chart-2: oklch(0.696 0.17 162.48);
-    --chart-3: oklch(0.769 0.188 70.08);
-    --chart-4: oklch(0.627 0.265 303.9);
-    --chart-5: oklch(0.645 0.246 16.439);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(0.269 0 0);
-    --sidebar-ring: oklch(0.439 0 0);
-    --switch-thumb-unchecked: oklch(0.985 0 0);
-    --switch-track-unchecked: oklch(0.35 0 0);
-    /* custom colors */
-    --info: oklch(0.7095 0.1028 208.28);
-    --success: oklch(0.8215 0.2068 152.19);
-    --surface: oklch(0.2705 0.0087 184.59);
-    --table-background: oklch(0.2497 0.0089 184.49);
-    --table-head-background: oklch(0.201 0.005 173.84);
-    --table-stroke: oklch(0 0 0);
-  }
-}
-
-/* Explicit dark theme - overrides system preference */
-.dark {
+/* Dark theme variables */
+:root:is(.dark) {
   --background: oklch(0.2165 0.0078 182.18);
   --foreground: oklch(1 0 0);
   --card: oklch(0.2497 0.0089 184.49);
@@ -127,16 +73,16 @@
   --muted: oklch(0.6406 0.0038 174.41);
   --muted-foreground: oklch(0.5029 0.0052 179.57);
   --accent: oklch(0.782 0.1646 163.86);
-  --accent-secondary: oklch(0.6138 0.1095 167.55); /* custom */
+  --accent-secondary: oklch(0.6138 0.1095 167.55);
   --accent-foreground: oklch(0.383 0.0634 171.65);
   --destructive: oklch(0.7332 0.2632 327.1);
   --destructive-foreground: oklch(0.42 0.13 327.63);
   --border: oklch(0.3128 0.0058 179.33);
   --input: oklch(0.269 0 0);
   --ring: oklch(0.439 0 0);
-  --alert-success: var(--success);
-  --alert-error: var(--destructive);
-  --alert-warning: oklch(0.75 0.2 80);
+  --alert-success: var(--accent-secondary);
+  --alert-error: var(--destructive-foreground);
+  --alert-warning: var(--warning);
   --alert-info: var(--info);
   --card-border: oklch(0.2672 0.0086 169.51);
   --chart-1: oklch(0.488 0.243 264.376);
@@ -154,17 +100,15 @@
   --sidebar-ring: oklch(0.439 0 0);
   --switch-thumb-unchecked: oklch(0.985 0 0);
   --switch-track-unchecked: oklch(0.35 0 0);
-  /* custom colors */
   --info: oklch(0.7095 0.1028 208.28);
-  --success: oklch(0.8215 0.2068 152.19);
   --surface: oklch(0.2705 0.0087 184.59);
   --table-background: oklch(0.2497 0.0089 184.49);
   --table-head-background: oklch(0.201 0.005 173.84);
   --table-stroke: oklch(0 0 0);
 }
 
-/* https://tailwindcss.com/docs/theme#referencing-other-variables */
-@theme inline {
+/* Theme configuration */
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

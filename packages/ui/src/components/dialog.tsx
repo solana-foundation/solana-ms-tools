@@ -38,10 +38,11 @@ function DialogOverlay({
 function DialogContent({
   className,
   children,
+  renderPortal = true,
   ...props
-}: React.ComponentProps<typeof DialogPrimitive.Content>) {
-  return (
-    <DialogPortal data-slot="dialog-portal">
+}: React.ComponentProps<typeof DialogPrimitive.Content> & { renderPortal?: boolean }) {
+  const content = (
+    <>
       <DialogOverlay />
       <DialogPrimitive.Content
         data-slot="dialog-content"
@@ -57,8 +58,10 @@ function DialogContent({
           <span className="sr-only">Close</span>
         </DialogPrimitive.Close>
       </DialogPrimitive.Content>
-    </DialogPortal>
+    </>
   )
+
+  return renderPortal ? <DialogPortal data-slot="dialog-portal">{content}</DialogPortal> : content
 }
 
 function DialogHeader({ className, ...props }: React.ComponentProps<'div'>) {

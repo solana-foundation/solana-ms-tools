@@ -48,10 +48,17 @@ export const Disabled: Story = {
 export const WithError: Story = {
   render: () => (
     <div className="w-[400px] space-y-2">
-      <label htmlFor="error-message" className="text-destructive text-sm leading-none font-medium">
+      <label
+        htmlFor="error-message-textarea"
+        className="text-destructive text-sm leading-none font-medium"
+      >
         Error message
       </label>
-      <Textarea id="error-message" placeholder="Type your message here." aria-invalid="true" />
+      <Textarea
+        id="error-message-textarea"
+        placeholder="Type your message here."
+        aria-invalid="true"
+      />
       <p className="text-destructive text-sm">This field is required.</p>
     </div>
   ),
@@ -60,7 +67,11 @@ export const WithError: Story = {
 export const WithValue: Story = {
   render: () => (
     <div className="w-[400px]">
+      <label htmlFor="with-value" className="text-destructive text-sm leading-none font-medium">
+        With value
+      </label>
       <Textarea
+        id="with-value"
         value="This is some preset content that you can edit."
         onChange={(e) => console.log(e.target.value)}
       />

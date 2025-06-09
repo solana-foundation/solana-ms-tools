@@ -9,7 +9,6 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  render: (args) => <Progress {...args} />,
 } satisfies Meta<typeof Progress>
 
 export default meta
@@ -18,7 +17,7 @@ type Story = StoryObj<typeof Progress>
 export const Default: Story = {
   render: () => (
     <div className="w-[60%] min-w-40">
-      <Progress value={45} />
+      <Progress aria-label="progress" value={45} />
     </div>
   ),
 }
@@ -30,7 +29,7 @@ export const WithLabel: Story = {
         <span>Progress</span>
         <span>45%</span>
       </div>
-      <Progress value={45} />
+      <Progress aria-label="progress" value={45} />
     </div>
   ),
 }
@@ -38,9 +37,9 @@ export const WithLabel: Story = {
 export const CustomHeight: Story = {
   render: () => (
     <div className="w-[60%] min-w-40 space-y-4">
-      <Progress value={45} className="h-1" />
-      <Progress value={45} className="h-3" />
-      <Progress value={45} className="h-4" />
+      <Progress aria-label="progress" value={45} className="h-1" />
+      <Progress aria-label="progress-1" value={45} className="h-3" />
+      <Progress aria-label="progress-2" value={45} className="h-4" />
     </div>
   ),
 }
@@ -48,9 +47,9 @@ export const CustomHeight: Story = {
 export const CustomColors: Story = {
   render: () => (
     <div className="w-[60%] min-w-40 space-y-4">
-      <Progress value={45} className="bg-blue-100 [&>div]:bg-blue-500" />
-      <Progress value={65} className="bg-green-100 [&>div]:bg-green-500" />
-      <Progress value={85} className="bg-red-100 [&>div]:bg-red-500" />
+      <Progress aria-label="progress" value={45} className="bg-blue-100 [&>div]:bg-blue-500" />
+      <Progress aria-label="progress-1" value={65} className="bg-green-100 [&>div]:bg-green-500" />
+      <Progress aria-label="progress-2" value={85} className="bg-red-100 [&>div]:bg-red-500" />
     </div>
   ),
 }
@@ -80,7 +79,7 @@ const LoadingProgress = () => {
         <span>Loading...</span>
         <span>{Math.round(progress)}%</span>
       </div>
-      <Progress value={progress} />
+      <Progress aria-label="progress" value={progress} />
     </div>
   )
 }
@@ -94,23 +93,23 @@ export const States: Story = {
     <div className="w-[60%] min-w-40 space-y-4">
       <div className="space-y-1.5">
         <span className="text-sm">Empty</span>
-        <Progress value={0} />
+        <Progress aria-label="progress" value={0} />
       </div>
       <div className="space-y-1.5">
         <span className="text-sm">Quarter</span>
-        <Progress value={25} />
+        <Progress aria-label="progress-1" value={25} />
       </div>
       <div className="space-y-1.5">
         <span className="text-sm">Half</span>
-        <Progress value={50} />
+        <Progress aria-label="progress-2" value={50} />
       </div>
       <div className="space-y-1.5">
         <span className="text-sm">Three Quarters</span>
-        <Progress value={75} />
+        <Progress aria-label="progress-3" value={75} />
       </div>
       <div className="space-y-1.5">
         <span className="text-sm">Full</span>
-        <Progress value={100} />
+        <Progress aria-label="progress-4" value={100} />
       </div>
     </div>
   ),
@@ -120,6 +119,7 @@ export const WithCustomStyling: Story = {
   render: () => (
     <div className="w-[60%] min-w-40">
       <Progress
+        aria-label="progress"
         value={65}
         className="h-3 rounded-xl bg-gradient-to-b from-blue-500 to-purple-500 [&>div]:bg-cyan-500 [&>div]:bg-gradient-to-r [&>div]:from-blue-500 [&>div]:to-cyan-500"
       />

@@ -35,9 +35,9 @@ export const Horizontal: Story = {
     <ScrollArea className="w-96 rounded-lg border whitespace-nowrap" {...args}>
       <div className="flex p-4">
         {Array.from({ length: 50 }, (_, i) => (
-          <div key={i} className="mr-4 w-[150px] shrink-0 rounded-lg border p-4 last:mr-0">
+          <div key={i} className="bg-card mr-4 w-[150px] shrink-0 rounded-lg border p-4 last:mr-0">
             <div className="font-semibold">Card {i + 1}</div>
-            <div className="text-muted-foreground text-sm">Description</div>
+            <div className="text-sm">Description</div>
           </div>
         ))}
       </div>
@@ -53,9 +53,9 @@ export const Both: Story = {
       <div className="p-4">
         <h4 className="mb-4 text-sm leading-none font-medium">Changelog</h4>
         {Array.from({ length: 50 }, (_, i) => (
-          <div key={i} className="mb-4 last:mb-0">
+          <div key={i} className="bg-card mb-4 last:mb-0">
             <div className="text-sm font-medium">v1.2.{50 - i}</div>
-            <div className="text-muted-foreground min-w-400 text-sm">
+            <div className="min-w-400 text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus,
               quibusdam, voluptates, quos voluptatum quod exercitationem quas voluptas quidem quae
               quia. Quisquam voluptatibus.
@@ -78,9 +78,9 @@ export const WithinCard: Story = {
       <ScrollArea className="h-72" {...args}>
         <div className="px-6 pb-6">
           {Array.from({ length: 20 }, (_, i) => (
-            <div key={i} className="mt-4">
+            <div key={i} className="bg-card mt-4">
               <div className="text-sm font-medium">Message {i + 1}</div>
-              <div className="text-muted-foreground text-sm">
+              <div className="text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quas.
                 Quisquam voluptatibus.
               </div>
@@ -96,7 +96,7 @@ export const CustomScrollbar: Story = {
   render: (args) => (
     <ScrollArea className="h-72 w-48 rounded-lg border" {...args}>
       <ScrollBar className="bg-cyan-500" orientation="vertical" />
-      <div className="p-4">
+      <div className="bg-card p-4">
         <h4 className="mb-4 text-sm leading-none font-medium">Tags</h4>
         {tags.map((tag) => (
           <div key={tag} className="text-sm">

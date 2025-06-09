@@ -25,7 +25,7 @@ type Story = StoryObj<typeof Tooltip>
 export const Default: Story = {
   render: () => (
     <Tooltip>
-      <TooltipTrigger>
+      <TooltipTrigger aria-label="info">
         <InfoIcon className="size-4" />
       </TooltipTrigger>
       <TooltipContent>

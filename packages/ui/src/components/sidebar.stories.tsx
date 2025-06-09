@@ -76,7 +76,7 @@ const DefaultSidebarContent = () => (
         <SidebarGroupLabel>
           Projects
           <SidebarGroupAction>
-            <PlusIcon className="h-4 w-4" />
+            <PlusIcon className="h-4 w-4" aria-label="add project" />
           </SidebarGroupAction>
         </SidebarGroupLabel>
         <SidebarGroupContent>

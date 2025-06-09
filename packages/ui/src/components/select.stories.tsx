@@ -23,6 +23,7 @@ export default {
 const DEFAULT_ARGUMENTS = {
   size: 'default',
   disabled: false,
+  value: '1',
 }
 
 type Story = StoryObj<typeof Select>
@@ -30,16 +31,18 @@ type Story = StoryObj<typeof Select>
 export const Default: Story = {
   args: DEFAULT_ARGUMENTS,
   render: (args) => (
-    <Select {...args}>
-      <SelectTrigger>
-        <SelectValue placeholder="Select an option" />
-      </SelectTrigger>
-      <SelectContent>
-        <SelectItem value="1">Option 1</SelectItem>
-        <SelectItem value="2">Option 2</SelectItem>
-        <SelectItem value="3">Option 3</SelectItem>
-      </SelectContent>
-    </Select>
+    <div className="bg-card p-4">
+      <Select {...args}>
+        <SelectTrigger name="select" aria-label="select">
+          <SelectValue placeholder="Select an option" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem value="1">Option 1</SelectItem>
+          <SelectItem value="2">Option 2</SelectItem>
+          <SelectItem value="3">Option 3</SelectItem>
+        </SelectContent>
+      </Select>
+    </div>
   ),
 }
 
@@ -47,7 +50,7 @@ export const Disabled: Story = {
   args: { ...DEFAULT_ARGUMENTS, disabled: true },
   render: (args) => (
     <Select {...args}>
-      <SelectTrigger>
+      <SelectTrigger name="select" aria-label="select">
         <SelectValue placeholder="Select an option" />
       </SelectTrigger>
       <SelectContent>
@@ -63,7 +66,7 @@ export const GroupedOptions: Story = {
   args: DEFAULT_ARGUMENTS,
   render: (args) => (
     <Select {...args}>
-      <SelectTrigger>
+      <SelectTrigger name="select" aria-label="select">
         <SelectValue placeholder="Select an option" />
       </SelectTrigger>
       <SelectContent>
@@ -86,7 +89,7 @@ export const WithIcon: Story = {
   args: DEFAULT_ARGUMENTS,
   render: (args) => (
     <Select {...args}>
-      <SelectTrigger>
+      <SelectTrigger name="select" aria-label="select">
         <SelectValue placeholder="Select an option" />
       </SelectTrigger>
       <SelectContent>

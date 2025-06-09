@@ -1,5 +1,11 @@
 # @solana-foundation/ms-tools-ui
 
+## 0.9.0
+
+### Minor Changes
+
+- Ability to skip portal rendering for Dialog
+
 ## 0.8.4
 
 ### Patch Changes

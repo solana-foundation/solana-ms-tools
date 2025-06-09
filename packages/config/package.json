@@ -1,6 +1,6 @@
 {
   "name": "@solana-foundation/ms-tools-config",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Shared ESLint and Prettier configurations to ensure consistent code style and quality across all Solana microsite projects",
   "keywords": [
     "solana",

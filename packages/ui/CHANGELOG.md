@@ -1,5 +1,13 @@
 # @solana-foundation/ms-tools-ui
 
+## 0.9.2
+
+### Patch Changes
+
+- Security update for prismjs and tar-fs. Resolutions in the lockfile are needed until sanity libs update used verions.
+- Updated dependencies
+  - @solana-foundation/ms-tools-config@0.1.3
+
 ## 0.9.1
 
 ### Patch Changes

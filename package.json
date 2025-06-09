@@ -39,5 +39,11 @@
     "turbo": "^2.5.2",
     "typescript": "^5.5.3",
     "vitest": "^3.1.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "prismjs": "^1.30.0",
+      "tar-fs": "^2.1.3"
+    }
   }
 }

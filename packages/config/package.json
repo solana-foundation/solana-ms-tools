@@ -44,7 +44,7 @@
     "@types/node": "^22.15.3",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
-    "@vitest/coverage-v8": "3.2.1",
+    "@vitest/coverage-v8": "3.2.3",
     "debug": "^4.4.0",
     "eslint": "^9.25.1",
     "eslint-config-eslint": "^11.0.0",
@@ -63,7 +63,7 @@
     "stylelint": "^16.19.1",
     "stylelint-config-standard-scss": "^15.0.1",
     "typescript": "^5.5.3",
-    "vitest": "^3.1.2"
+    "vitest": "3.2.3"
   },
   "optionalDependencies": {
     "tsup": "^8.2.4"

@@ -32,9 +32,9 @@ export const Success: Story = {
   },
 }
 
-export const Failure: Story = {
+export const Destructive: Story = {
   args: {
-    variant: 'failure',
+    variant: 'destructive',
     size: 'xxs',
     children: 'Failed',
   },

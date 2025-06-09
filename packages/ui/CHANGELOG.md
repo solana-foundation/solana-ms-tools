@@ -1,5 +1,11 @@
 # @solana-foundation/ms-tools-ui
 
+## 0.9.1
+
+### Patch Changes
+
+- Fixed most accessibility issues in stories, dropped unused prefers-color-scheme support
+
 ## 0.9.0
 
 ### Minor Changes

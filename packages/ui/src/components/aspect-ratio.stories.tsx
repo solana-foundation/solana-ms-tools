@@ -35,7 +35,7 @@ export const Square: Story = {
   render: (args) => (
     <AspectRatio {...args}>
       <div className="flex h-full items-center justify-center">
-        <p className="text-sm text-gray-500">1:1 Aspect Ratio</p>
+        <p className="text-sm text-black">1:1 Aspect Ratio</p>
       </div>
     </AspectRatio>
   ),
@@ -49,7 +49,7 @@ export const Landscape16by9: Story = {
   render: (args) => (
     <AspectRatio {...args}>
       <div className="flex h-full items-center justify-center">
-        <p className="text-sm text-gray-500">16:9 Aspect Ratio</p>
+        <p className="text-sm text-black">16:9 Aspect Ratio</p>
       </div>
     </AspectRatio>
   ),
@@ -63,7 +63,7 @@ export const Portrait4by5: Story = {
   render: (args) => (
     <AspectRatio {...args}>
       <div className="flex h-full items-center justify-center rounded-lg bg-purple-200">
-        <p className="text-sm text-gray-500">4:5 Aspect Ratio</p>
+        <p className="text-sm text-black">4:5 Aspect Ratio</p>
       </div>
     </AspectRatio>
   ),

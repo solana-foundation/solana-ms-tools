@@ -92,13 +92,16 @@ export const WithCustomStyles: Story = {
     <Breadcrumb>
       <BreadcrumbList className="text-base">
         <BreadcrumbItem>
-          <BreadcrumbLink href="/" className="text-blue-600 hover:text-blue-800">
+          <BreadcrumbLink href="/" className="light:underline text-gray-600 dark:text-yellow-500">
             Home
           </BreadcrumbLink>
         </BreadcrumbItem>
-        <BreadcrumbSeparator className="text-gray-400" />
+        <BreadcrumbSeparator className="text-gray-600" />
         <BreadcrumbItem>
-          <BreadcrumbLink href="/products" className="text-blue-600 hover:text-blue-800">
+          <BreadcrumbLink
+            href="/products"
+            className="light:underline text-gray-600 dark:text-yellow-500"
+          >
             Products
           </BreadcrumbLink>
         </BreadcrumbItem>

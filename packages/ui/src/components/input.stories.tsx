@@ -20,7 +20,12 @@ const meta = {
       control: 'text',
     },
   },
-  render: (args) => <Input {...args} />,
+  render: (args) => (
+    <label>
+      Input
+      <Input {...args} />
+    </label>
+  ),
 } satisfies Meta<typeof Input>
 
 export default meta

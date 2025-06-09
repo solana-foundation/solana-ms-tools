@@ -26,10 +26,11 @@ export const Default: Story = {
       <AlertDialogTrigger
         className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-4 py-2"
         aria-label="Delete account"
+        aria-controls="delete-account-dialog"
       >
         Delete Account
       </AlertDialogTrigger>
-      <AlertDialogContent role="alertdialog" aria-modal="true">
+      <AlertDialogContent id="delete-account-dialog" role="alertdialog" aria-modal="true">
         <AlertDialogHeader>
           <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
           <AlertDialogDescription>
@@ -46,29 +47,36 @@ export const Default: Story = {
   ),
 }
 
-export const CustomStyling: Story = {
+export const DangerousAction: Story = {
   render: () => (
     <AlertDialog>
-      <AlertDialogTrigger className="bg-destructive-foreground light:bg-destructive light:text-black hover:bg-destructive/90 rounded-md px-4 py-2 text-white">
+      <AlertDialogTrigger
+        className="bg-destructive-foreground light:bg-destructive light:text-black hover:bg-destructive/90 rounded-md px-4 py-2 text-white"
+        aria-label="Dangerous Action"
+        aria-controls="dangerous-action-dialog"
+      >
         Dangerous Action
       </AlertDialogTrigger>
       <AlertDialogContent
         role="alertdialog"
         aria-modal="true"
+        id="dangerous-action-dialog"
         className="border-destructive light:bg-white light:text-white"
       >
         <AlertDialogHeader>
           <AlertDialogTitle className="light:text-black">
-            Warning: Destructive Action
+            Warning: Dangerous Action
           </AlertDialogTitle>
           <AlertDialogDescription className="text-destructive light:text-black">
-            <p>
-              <strong>Warning:</strong> You are about to perform an irreversible action.
-            </p>
-            <p>
-              This will permanently delete your data and cannot be undone. Please confirm that you
-              understand the consequences of this action.
-            </p>
+            <div className="space-y-4">
+              <p>
+                <strong>Warning:</strong> You are about to perform an irreversible action.
+              </p>
+              <p>
+                This will permanently delete your data and cannot be undone. Please confirm that you
+                understand the consequences of this action.
+              </p>
+            </div>
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
@@ -88,10 +96,11 @@ export const WithLongContent: Story = {
       <AlertDialogTrigger
         className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-4 py-2"
         aria-label="View terms of service"
+        aria-controls="terms-of-service-dialog"
       >
         Show Terms
       </AlertDialogTrigger>
-      <AlertDialogContent role="dialog" aria-modal="true">
+      <AlertDialogContent id="terms-of-service-dialog" role="alertdialog" aria-modal="true">
         <AlertDialogHeader>
           <AlertDialogTitle>Terms of Service</AlertDialogTitle>
           <AlertDialogDescription className="max-h-[200px] overflow-y-auto">

@@ -16,7 +16,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  render: () => <Switch />,
+  render: () => <Switch aria-label="switch" />,
 }
 
 export const WithLabel: Story = {
@@ -69,9 +69,7 @@ export const WithDescription: Story = {
         >
           Enable notifications
         </label>
-        <p className="text-muted-foreground text-sm">
-          Receive notifications when someone mentions you.
-        </p>
+        <p className="text-sm">Receive notifications when someone mentions you.</p>
       </div>
     </div>
   ),

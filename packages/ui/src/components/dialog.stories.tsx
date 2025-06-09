@@ -48,35 +48,6 @@ export const Basic: Story = {
   render: () => <BasicExample />,
 }
 
-const AlertExample = () => {
-  return (
-    <Dialog>
-      <DialogTrigger asChild>
-        <Button variant="destructive">Delete Account</Button>
-      </DialogTrigger>
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle>Are you absolutely sure?</DialogTitle>
-          <DialogDescription>
-            This action cannot be undone. This will permanently delete your account and remove your
-            data from our servers.
-          </DialogDescription>
-        </DialogHeader>
-        <DialogFooter className="gap-3">
-          <DialogClose>
-            <Button variant="ghost">Cancel</Button>
-          </DialogClose>
-          <Button variant="destructive">Delete Account</Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
-  )
-}
-
-export const Alert: Story = {
-  render: () => <AlertExample />,
-}
-
 const CustomStylingExample = () => {
   return (
     <Dialog>

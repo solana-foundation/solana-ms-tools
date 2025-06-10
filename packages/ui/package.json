@@ -6,12 +6,195 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "exports": {
-    ".": "./dist/index.js",
-    "./index.js": "./dist/index.js",
-    "./styles.css": "./dist/index.css"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./styles.css": "./dist/index.css",
+    "./hooks/use-is-mobile": {
+      "types": "./dist/hooks/use-is-mobile.d.ts",
+      "import": "./dist/hooks/use-is-mobile.js",
+      "require": "./dist/hooks/use-is-mobile.js"
+    },
+    "./lib/utils": {
+      "types": "./dist/lib/utils/index.d.ts",
+      "import": "./dist/lib/utils/index.js",
+      "require": "./dist/lib/utils/index.js"
+    },
+    "./components/address": {
+      "types": "./dist/components/address.d.ts",
+      "import": "./dist/components/address.js",
+      "require": "./dist/components/address.js"
+    },
+    "./components/alert": {
+      "types": "./dist/components/alert.d.ts",
+      "import": "./dist/components/alert.js",
+      "require": "./dist/components/alert.js"
+    },
+    "./components/alert-dialog": {
+      "types": "./dist/components/alert-dialog.d.ts",
+      "import": "./dist/components/alert-dialog.js",
+      "require": "./dist/components/alert-dialog.js"
+    },
+    "./components/aspect-ratio": {
+      "types": "./dist/components/aspect-ratio.d.ts",
+      "import": "./dist/components/aspect-ratio.js",
+      "require": "./dist/components/aspect-ratio.js"
+    },
+    "./components/avatar": {
+      "types": "./dist/components/avatar.d.ts",
+      "import": "./dist/components/avatar.js",
+      "require": "./dist/components/avatar.js"
+    },
+    "./components/badge": {
+      "types": "./dist/components/badge.d.ts",
+      "import": "./dist/components/badge.js",
+      "require": "./dist/components/badge.js"
+    },
+    "./components/breadcrumb": {
+      "types": "./dist/components/breadcrumb.d.ts",
+      "import": "./dist/components/breadcrumb.js",
+      "require": "./dist/components/breadcrumb.js"
+    },
+    "./components/button": {
+      "types": "./dist/components/button.d.ts",
+      "import": "./dist/components/button.js",
+      "require": "./dist/components/button.js"
+    },
+    "./components/card": {
+      "types": "./dist/components/card.d.ts",
+      "import": "./dist/components/card.js",
+      "require": "./dist/components/card.js"
+    },
+    "./components/checkbox": {
+      "types": "./dist/components/checkbox.d.ts",
+      "import": "./dist/components/checkbox.js",
+      "require": "./dist/components/checkbox.js"
+    },
+    "./components/collapsible": {
+      "types": "./dist/components/collapsible.d.ts",
+      "import": "./dist/components/collapsible.js",
+      "require": "./dist/components/collapsible.js"
+    },
+    "./components/copyable": {
+      "types": "./dist/components/copyable.d.ts",
+      "import": "./dist/components/copyable.js",
+      "require": "./dist/components/copyable.js"
+    },
+    "./components/dialog": {
+      "types": "./dist/components/dialog.d.ts",
+      "import": "./dist/components/dialog.js",
+      "require": "./dist/components/dialog.js"
+    },
+    "./components/drawer": {
+      "types": "./dist/components/drawer.d.ts",
+      "import": "./dist/components/drawer.js",
+      "require": "./dist/components/drawer.js"
+    },
+    "./components/form": {
+      "types": "./dist/components/form.d.ts",
+      "import": "./dist/components/form.js",
+      "require": "./dist/components/form.js"
+    },
+    "./components/input": {
+      "types": "./dist/components/input.d.ts",
+      "import": "./dist/components/input.js",
+      "require": "./dist/components/input.js"
+    },
+    "./components/label": {
+      "types": "./dist/components/label.d.ts",
+      "import": "./dist/components/label.js",
+      "require": "./dist/components/label.js"
+    },
+    "./components/pagination": {
+      "types": "./dist/components/pagination.d.ts",
+      "import": "./dist/components/pagination.js",
+      "require": "./dist/components/pagination.js"
+    },
+    "./components/progress": {
+      "types": "./dist/components/progress.d.ts",
+      "import": "./dist/components/progress.js",
+      "require": "./dist/components/progress.js"
+    },
+    "./components/radio-group": {
+      "types": "./dist/components/radio-group.d.ts",
+      "import": "./dist/components/radio-group.js",
+      "require": "./dist/components/radio-group.js"
+    },
+    "./components/scroll-area": {
+      "types": "./dist/components/scroll-area.d.ts",
+      "import": "./dist/components/scroll-area.js",
+      "require": "./dist/components/scroll-area.js"
+    },
+    "./components/select": {
+      "types": "./dist/components/select.d.ts",
+      "import": "./dist/components/select.js",
+      "require": "./dist/components/select.js"
+    },
+    "./components/separator": {
+      "types": "./dist/components/separator.d.ts",
+      "import": "./dist/components/separator.js",
+      "require": "./dist/components/separator.js"
+    },
+    "./components/sheet": {
+      "types": "./dist/components/sheet.d.ts",
+      "import": "./dist/components/sheet.js",
+      "require": "./dist/components/sheet.js"
+    },
+    "./components/sidebar": {
+      "types": "./dist/components/sidebar.d.ts",
+      "import": "./dist/components/sidebar.js",
+      "require": "./dist/components/sidebar.js"
+    },
+    "./components/skeleton": {
+      "types": "./dist/components/skeleton.d.ts",
+      "import": "./dist/components/skeleton.js",
+      "require": "./dist/components/skeleton.js"
+    },
+    "./components/sonner": {
+      "types": "./dist/components/sonner.d.ts",
+      "import": "./dist/components/sonner.js",
+      "require": "./dist/components/sonner.js"
+    },
+    "./components/switch": {
+      "types": "./dist/components/switch.d.ts",
+      "import": "./dist/components/switch.js",
+      "require": "./dist/components/switch.js"
+    },
+    "./components/table": {
+      "types": "./dist/components/table.d.ts",
+      "import": "./dist/components/table.js",
+      "require": "./dist/components/table.js"
+    },
+    "./components/tabs": {
+      "types": "./dist/components/tabs.d.ts",
+      "import": "./dist/components/tabs.js",
+      "require": "./dist/components/tabs.js"
+    },
+    "./components/textarea": {
+      "types": "./dist/components/textarea.d.ts",
+      "import": "./dist/components/textarea.js",
+      "require": "./dist/components/textarea.js"
+    },
+    "./components/tooltip": {
+      "types": "./dist/components/tooltip.d.ts",
+      "import": "./dist/components/tooltip.js",
+      "require": "./dist/components/tooltip.js"
+    },
+    "./components/toggle": {
+      "types": "./dist/components/toggle.d.ts",
+      "import": "./dist/components/toggle.js",
+      "require": "./dist/components/toggle.js"
+    },
+    "./components/toggle-group": {
+      "types": "./dist/components/toggle-group.d.ts",
+      "import": "./dist/components/toggle-group.js",
+      "require": "./dist/components/toggle-group.js"
+    }
   },
   "scripts": {
-    "build": "tsup ./src/index.ts --config=./tsup-esm.config.mjs --tsconfig=./tsconfig.json",
+    "build": "tsup --config=./tsup-esm.config.mjs --tsconfig=./tsconfig.json",
     "dev": "pnpm run storybook",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -26,10 +209,6 @@
     "generate": "pnpx shadcn@2.4.1 add"
   },
   "peerDependencies": {
-    "react": "^18.0.0 || ^19.1.0",
-    "react-dom": "^18.0.0 || ^19.1.0"
-  },
-  "dependencies": {
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-alert-dialog": "^1.1.14",
     "@radix-ui/react-aspect-ratio": "^1.1.7",
@@ -43,31 +222,121 @@
     "@radix-ui/react-scroll-area": "^1.2.9",
     "@radix-ui/react-select": "^2.2.4",
     "@radix-ui/react-separator": "^1.1.7",
-    "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/react-switch": "^1.2.5",
     "@radix-ui/react-tabs": "^1.1.12",
     "@radix-ui/react-toggle": "^1.1.9",
     "@radix-ui/react-toggle-group": "^1.1.10",
     "@radix-ui/react-tooltip": "^1.2.7",
-    "@solana-foundation/ms-tools-config": "workspace:^",
-    "@tailwindcss/postcss": "^4.1.5",
-    "@vitejs/plugin-react": "^4.5.1",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "jsdom": "^26.1.0",
     "lucide-react": "^0.511.0",
-    "next-themes": "^0.4.6",
-    "postcss": "^8.4.31",
+    "react": "^18.0.0 || ^19.1.0",
+    "react-dom": "^18.0.0 || ^19.1.0",
     "react-hook-form": "^7.56.4",
     "sonner": "^2.0.3",
-    "tailwind-merge": "^3.2.0",
-    "tailwindcss": "^4.1.5",
     "vaul": "^1.1.2",
     "zod": "^3.25.30"
   },
+  "peerDependenciesMeta": {
+    "@radix-ui/react-alert-dialog": {
+      "optional": true
+    },
+    "@radix-ui/react-aspect-ratio": {
+      "optional": true
+    },
+    "@radix-ui/react-avatar": {
+      "optional": true
+    },
+    "@radix-ui/react-checkbox": {
+      "optional": true
+    },
+    "@radix-ui/react-collapsible": {
+      "optional": true
+    },
+    "@radix-ui/react-dialog": {
+      "optional": true
+    },
+    "@radix-ui/react-label": {
+      "optional": true
+    },
+    "@radix-ui/react-progress": {
+      "optional": true
+    },
+    "@radix-ui/react-radio-group": {
+      "optional": true
+    },
+    "@radix-ui/react-scroll-area": {
+      "optional": true
+    },
+    "@radix-ui/react-select": {
+      "optional": true
+    },
+    "@radix-ui/react-separator": {
+      "optional": true
+    },
+    "@radix-ui/react-switch": {
+      "optional": true
+    },
+    "@radix-ui/react-tabs": {
+      "optional": true
+    },
+    "@radix-ui/react-toggle": {
+      "optional": true
+    },
+    "@radix-ui/react-toggle-group": {
+      "optional": true
+    },
+    "@radix-ui/react-tooltip": {
+      "optional": true
+    },
+    "lucide-react": {
+      "optional": true
+    },
+    "sonner": {
+      "optional": true
+    },
+    "vaul": {
+      "optional": true
+    },
+    "@hookform/resolvers": {
+      "optional": true
+    },
+    "react-hook-form": {
+      "optional": true
+    },
+    "zod": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "@solana-foundation/ms-tools-config": "workspace:^",
+    "@tailwindcss/postcss": "^4.1.5",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "postcss": "^8.4.31",
+    "tailwind-merge": "^3.2.0",
+    "tailwindcss": "^4.1.5"
+  },
   "devDependencies": {
+    "@hookform/resolvers": "^5.0.1",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@playwright/test": "^1.52.0",
+    "@radix-ui/react-alert-dialog": "^1.1.14",
+    "@radix-ui/react-aspect-ratio": "^1.1.7",
+    "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-checkbox": "^1.3.2",
+    "@radix-ui/react-collapsible": "^1.1.11",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-progress": "^1.1.7",
+    "@radix-ui/react-radio-group": "^1.3.7",
+    "@radix-ui/react-scroll-area": "^1.2.9",
+    "@radix-ui/react-select": "^2.2.4",
+    "@radix-ui/react-separator": "^1.1.7",
+    "@radix-ui/react-switch": "^1.2.5",
+    "@radix-ui/react-tabs": "^1.1.12",
+    "@radix-ui/react-toggle": "^1.1.9",
+    "@radix-ui/react-toggle-group": "^1.1.10",
+    "@radix-ui/react-tooltip": "^1.2.7",
     "@storybook/addon-a11y": "^9.0.6",
     "@storybook/addon-docs": "^9.0.6",
     "@storybook/addon-themes": "^9.0.6",
@@ -90,6 +359,7 @@
     "@vitest/coverage-v8": "3.2.3",
     "autoprefixer": "^10.4.17",
     "css-loader": "^7.1.2",
+    "lucide-react": "^0.511.0",
     "playwright": "^1.52.0",
     "postcss-loader": "^8.1.0",
     "prettier": "^3.5.3",
@@ -97,12 +367,16 @@
     "process": "^0.11.10",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hook-form": "^7.56.4",
+    "sonner": "^2.0.3",
     "storybook": "^9.0.6",
     "style-loader": "^4.0.0",
     "tsup": "^8.2.4",
     "tw-animate-css": "^1.3.0",
     "typescript": "^5.5.3",
-    "vitest": "3.2.3"
+    "vaul": "^1.1.2",
+    "vitest": "3.2.3",
+    "zod": "^3.25.30"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",

@@ -1,3 +1,43 @@
-import sharedConfig from '@solana-foundation/ms-tools-config/tsup-esm.config.mjs'
+import { getConfig } from '@solana-foundation/ms-tools-config/tsup-esm.config.mjs'
 
-export default sharedConfig
+const ENTRIES = {
+  'index': './src/index.ts',
+  'hooks/use-is-mobile': './src/hooks/use-is-mobile.ts',
+  'lib/utils/index': './src/lib/utils/index.ts',
+  'components/address': './src/components/address.tsx',
+  'components/alert': './src/components/alert.tsx',
+  'components/alert-dialog': './src/components/alert-dialog.tsx',
+  'components/aspect-ratio': './src/components/aspect-ratio.tsx',
+  'components/avatar': './src/components/avatar.tsx',
+  'components/badge': './src/components/badge.tsx',
+  'components/breadcrumb': './src/components/breadcrumb.tsx',
+  'components/button': './src/components/button.tsx',
+  'components/card': './src/components/card.tsx',
+  'components/checkbox': './src/components/checkbox.tsx',
+  'components/collapsible': './src/components/collapsible.tsx',
+  'components/copyable': './src/components/copyable.tsx',
+  'components/dialog': './src/components/dialog.tsx',
+  'components/drawer': './src/components/drawer.tsx',
+  'components/form': './src/components/form.tsx',
+  'components/input': './src/components/input.tsx',
+  'components/label': './src/components/label.tsx',
+  'components/pagination': './src/components/pagination.tsx',
+  'components/progress': './src/components/progress.tsx',
+  'components/radio-group': './src/components/radio-group.tsx',
+  'components/scroll-area': './src/components/scroll-area.tsx',
+  'components/select': './src/components/select.tsx',
+  'components/separator': './src/components/separator.tsx',
+  'components/sheet': './src/components/sheet.tsx',
+  'components/sidebar': './src/components/sidebar.tsx',
+  'components/skeleton': './src/components/skeleton.tsx',
+  'components/sonner': './src/components/sonner.tsx',
+  'components/switch': './src/components/switch.tsx',
+  'components/table': './src/components/table.tsx',
+  'components/tabs': './src/components/tabs.tsx',
+  'components/textarea': './src/components/textarea.tsx',
+  'components/tooltip': './src/components/tooltip.tsx',
+  'components/toggle': './src/components/toggle.tsx',
+  'components/toggle-group': './src/components/toggle-group.tsx',
+}
+
+export default getConfig(ENTRIES)

@@ -74,11 +74,31 @@ Shared configuration for microsites. Features:
 
 ### Registry Setup
 
-Add this to your `.npmrc`:
+Add this to your `.npmrc` to use these public packages from the GitHub registry:
 
 ```.npmrc
 @solana-foundation:registry=https://npm.pkg.github.com
 ```
+
+And authenticate with GitHub Package Registry:
+
+1. Generate a Classic Personal Access Token (PAT):
+
+   - Go to [GitHub Settings > Developer Settings > Personal Access Tokens > Tokens (classic)](https://github.com/settings/tokens)
+   - Click "Generate new token (classic)"
+   - Select at least `read:packages` scope
+   - Copy your token
+
+2. Login to the registry:
+
+   ```sh
+   npm login --registry=https://npm.pkg.github.com
+   ```
+
+   When prompted:
+
+   - Username: your GitHub username
+   - Password: your classic PAT (not your GitHub password)
 
 ### Installing Packages
 

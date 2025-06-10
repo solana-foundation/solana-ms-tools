@@ -7,6 +7,8 @@ Reusable React components built with React, Tailwind CSS, and Shadcn, forming th
 ## Features
 
 - Built with React, Tailwind CSS v4, and Shadcn
+- Tree-shakeable components with individual imports
+- Component-level dependency optimization
 - Consistent visual language and component styles
 - Pre-configured theming support
 - Core components including header and footer
@@ -32,7 +34,26 @@ Then install the package:
 pnpm add @solana-foundation/ms-tools-ui
 ```
 
+### Component-Specific Dependencies
+
+Components that use external libraries (like Radix UI) have their dependencies marked as optional peer dependencies. You only need to install the dependencies for the components you use.
+
+For example:
+
+```bash
+# If using Dialog component
+pnpm add @radix-ui/react-dialog
+
+# If using Form component
+pnpm add @hookform/resolvers react-hook-form zod
+
+# If using Avatar component
+pnpm add @radix-ui/react-avatar
+```
+
 ## Usage
+
+### Import Everything (Not Recommended for Production)
 
 ```tsx
 import { Button, Card } from '@solana-foundation/ms-tools-ui'
@@ -45,6 +66,24 @@ function MyComponent() {
     </Card>
   )
 }
+```
+
+### Individual Component Imports (Recommended)
+
+Import individual components for better tree-shaking
+
+```tsx
+// Avatar component (requires @radix-ui/react-avatar)
+import { Avatar } from '@solana-foundation/ms-tools-ui/components/avatar'
+import { Button } from '@solana-foundation/ms-tools-ui/components/button'
+// Dialog component (requires @radix-ui/react-dialog)
+import { Dialog } from '@solana-foundation/ms-tools-ui/components/dialog'
+// Form component (requires @hookform/resolvers, react-hook-form, zod)
+import { Form } from '@solana-foundation/ms-tools-ui/components/form'
+// Import hooks
+import { useIsMobile } from '@solana-foundation/ms-tools-ui/hooks/use-is-mobile'
+// Import utilities
+import { cn } from '@solana-foundation/ms-tools-ui/lib/utils'
 ```
 
 ## Development

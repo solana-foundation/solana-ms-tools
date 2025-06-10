@@ -1,5 +1,16 @@
 # @solana-foundation/ms-tools-ui
 
+## 0.10.0
+
+### Minor Changes
+
+- Adds per-component exports & optimizes dependencies
+
+### Patch Changes
+
+- Updated dependencies
+  - @solana-foundation/ms-tools-config@0.1.4
+
 ## 0.9.2
 
 ### Patch Changes

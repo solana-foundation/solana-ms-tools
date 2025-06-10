@@ -1,5 +1,12 @@
 # @solana-foundation/ms-tools-integrations
 
+## 0.1.4
+
+### Patch Changes
+
+- Updated dependencies
+  - @solana-foundation/ms-tools-config@0.1.4
+
 ## 0.1.3
 
 ### Patch Changes

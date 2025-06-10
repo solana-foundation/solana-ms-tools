@@ -1,5 +1,11 @@
 # @solana-foundation/ms-tools-config
 
+## 0.1.4
+
+### Patch Changes
+
+- Adds tsup getConfig util
+
 ## 0.1.3
 
 ### Patch Changes

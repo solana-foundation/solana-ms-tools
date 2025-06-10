@@ -1,6 +1,6 @@
 {
   "name": "@solana-foundation/ms-tools-integrations",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Handles integrations with third-party services like HubSpot, providing a centralized location for managing these connections",
   "main": "dist/index.js",
   "type": "module",

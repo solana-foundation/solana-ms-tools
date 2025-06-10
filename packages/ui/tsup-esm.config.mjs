@@ -1,7 +1,7 @@
 import { getConfig } from '@solana-foundation/ms-tools-config/tsup-esm.config.mjs'
 
 const ENTRIES = {
-  'index': './src/index.ts',
+  index: './src/index.ts',
   'hooks/use-is-mobile': './src/hooks/use-is-mobile.ts',
   'lib/utils/index': './src/lib/utils/index.ts',
   'components/address': './src/components/address.tsx',

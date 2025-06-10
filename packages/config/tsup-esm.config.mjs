@@ -13,14 +13,15 @@ const DEFAULT_ENTRY = {
   'index.esm': './src/index.ts',
 }
 
-export const getConfig = (entry) => defineConfig((options) => ({
-  ...DEFAULT_CONFIG,
-  minify: options?.env?.NODE_ENV === 'production' ? true : undefined,
-  sourcemap: Boolean(options.watch),
-  esbuildOptions(opts) {
-    opts.external = ['react']
-  },
-  entry,
-}))
+export const getConfig = (entry) =>
+  defineConfig((options) => ({
+    ...DEFAULT_CONFIG,
+    minify: options?.env?.NODE_ENV === 'production' ? true : undefined,
+    sourcemap: Boolean(options.watch),
+    esbuildOptions(opts) {
+      opts.external = ['react']
+    },
+    entry,
+  }))
 
 export default getConfig(DEFAULT_ENTRY)

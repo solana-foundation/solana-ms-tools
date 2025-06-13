@@ -1,5 +1,11 @@
 # @solana-foundation/ms-tools-ui
 
+## 0.10.1
+
+### Patch Changes
+
+- Ability to hide close button for dialog
+
 ## 0.10.0
 
 ### Minor Changes

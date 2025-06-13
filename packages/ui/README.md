@@ -11,7 +11,6 @@ Reusable React components built with React, Tailwind CSS, and Shadcn, forming th
 - Component-level dependency optimization
 - Consistent visual language and component styles
 - Pre-configured theming support
-- Core components including header and footer
 - Fully typed with TypeScript
 - Modern design system following Solana's brand guidelines
 - Responsive and accessible components

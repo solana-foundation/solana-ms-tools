@@ -61,7 +61,7 @@
     "prettier-eslint": "^16.4.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "stylelint": "^16.19.1",
-    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-config-tailwindcss": "^1.0.0",
     "typescript": "^5.5.3",
     "vitest": "3.2.3"
   },

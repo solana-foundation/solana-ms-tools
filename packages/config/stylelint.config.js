@@ -1,5 +1,5 @@
 const config = {
-  extends: ['stylelint-config-standard-scss'],
+  extends: ['stylelint-config-recommended'],
   files: ['**/*.module.css', '**/*.css'],
   rules: {
     'custom-property-pattern': null,

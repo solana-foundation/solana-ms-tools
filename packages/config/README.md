@@ -1,6 +1,6 @@
 # @solana-foundation/ms-tools-config
 
-This package provides shared configuration for ESLint, Prettier, Vitest, Stylelint, and TypeScript used across the Solana Microsite Framework project. It aims to enforce consistent code style and quality standards throughout all microsites.
+This package provides shared configuration for ESLint, Prettier, Vitest, and TypeScript used across the Solana Microsite Framework project. It aims to enforce consistent code style and quality standards throughout all microsites.
 
 ## Features
 
@@ -22,12 +22,6 @@ This package provides shared configuration for ESLint, Prettier, Vitest, Styleli
   - Strict type checking
   - Path aliases support
   - Modern ECMAScript features
-
-- **Stylelint Configuration**
-
-  - SCSS support
-  - Modern CSS features
-  - Consistent styling rules
 
 - **Vitest Configuration**
 
@@ -96,18 +90,6 @@ export default {
 }
 ```
 
-### Stylelint Setup
-
-```javascript
-// stylelint.config.js
-import baseConfig from '@solana-foundation/ms-tools-config/stylelint.config.js'
-
-export default {
-  extends: [baseConfig],
-  // Your project-specific rules
-}
-```
-
 ### Vitest Setup
 
 ```typescript
@@ -152,7 +134,6 @@ For detailed configuration options and best practices, refer to:
 - [ESLint Documentation](https://eslint.org/)
 - [Prettier Documentation](https://prettier.io/)
 - [TypeScript Documentation](https://www.typescriptlang.org/)
-- [Stylelint Documentation](https://stylelint.io/)
 - [Vitest Documentation](https://vitest.dev/)
 
 ## Contributing

@@ -35,7 +35,6 @@ Shared configuration for microsites. Features:
 - ESLint configuration with React and TypeScript support
 - Prettier setup with import sorting
 - TypeScript configuration with strict type checking
-- Stylelint setup for modern CSS
 - Vitest configuration for testing
 - PostCSS setup with Tailwind CSS v4 integration
 

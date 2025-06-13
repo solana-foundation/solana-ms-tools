@@ -13,7 +13,6 @@
     "clear": "turbo run clear && rimraf node_modules .turbo",
     "manypkg": "manypkg check",
     "manypkg:fix": "manypkg fix",
-    "build:ci": "turbo run build:ci",
     "playwright:install": "pnpm -filter '*ui' playwright:install",
     "prepublish": "turbo run prepublish",
     "storybook": "turbo run storybook",

@@ -7,3 +7,7 @@ ignoredBuiltDependencies:
 onlyBuiltDependencies:
   - '@swc/core'
   - esbuild
+# Minimum release age in minutes (14 days)
+# This delays installation of newly published packages to allow time for
+# the community to identify and report malicious releases
+minimumReleaseAge: 20160
